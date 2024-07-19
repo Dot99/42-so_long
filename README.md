@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="documentation/logo.png" alt="logo">
+	<img src="docs/logo.png" alt="logo">
 </div>
 
 <div align="center">
@@ -8,11 +8,11 @@
 </div>
 
 <div align="center">
-	<img src="documentation/game.png" alt="Game Screenshot">
+	<img src="docs/game.png" alt="Game Screenshot">
 </div>
 
 <div align="center">
-	<h1><a href="documentation/subject.pdf">Subject</a><h2>
+	<h1><a href="docs/subject.pdf">Subject</a><h2>
 </div>
 
 ## Features:
