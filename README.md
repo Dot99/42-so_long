@@ -22,7 +22,7 @@
 - Animation (Bonus Part).
 
 <div align="center">
-	<h1><a href="documentation/html/index.html">Documentation (WIP)</a></h1>
+	<h1><a>Documentation (WIP)</a></h1>
 </div>
 
 <div align="center">
