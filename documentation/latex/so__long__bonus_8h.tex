@@ -1,0 +1,311 @@
+\doxysection{includes/so\+\_\+long\+\_\+bonus.h File Reference}
+\hypertarget{so__long__bonus_8h}{}\label{so__long__bonus_8h}\index{includes/so\_long\_bonus.h@{includes/so\_long\_bonus.h}}
+
+
+Bonus Program Header.  
+
+
+{\ttfamily \#include "{}../lib/libft/libft.\+h"{}}\newline
+{\ttfamily \#include "{}../lib/minilibx-\/linux/mlx.\+h"{}}\newline
+{\ttfamily \#include $<$X11/keysym.\+h$>$}\newline
+{\ttfamily \#include $<$X11/\+X.\+h$>$}\newline
+Include dependency graph for so\+\_\+long\+\_\+bonus.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structs__coord}{s\+\_\+coord}}
+\begin{DoxyCompactList}\small\item\em Struct for coordinates of the map. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structs__img}{s\+\_\+img}}
+\begin{DoxyCompactList}\small\item\em Struct for image/\+Necessary for MLX. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structs__game}{s\+\_\+game}}
+\begin{DoxyCompactList}\small\item\em Base struct of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{so__long__bonus_8h_a4a4a74567939e7dc565c909984fa73c7}{MAP\+\_\+\+ERROR}}~"{}Failed to open map"{}
+\item 
+\#define \mbox{\hyperlink{so__long__bonus_8h_a6acfd3051f5c9ca1df44b4974073f098}{MAP\+\_\+\+ERROR\+\_\+\+EX}}~"{}Map extension not allowed"{}
+\item 
+\#define \mbox{\hyperlink{so__long__bonus_8h_a9f0cc07c52db57a96f46108bcce94fd7}{MAP\+\_\+\+ERROR\+\_\+\+PATH}}~"{}Map path is wrong"{}
+\item 
+\#define \mbox{\hyperlink{so__long__bonus_8h_a2a6e74814c472500fa41f1dc5127768c}{WRONG\+\_\+\+SIZE\+\_\+\+MAP}}~"{}Size of the map is incorrect"{}
+\item 
+\#define \mbox{\hyperlink{so__long__bonus_8h_a225c5a0090d033ec0a73a336759a7b24}{WRONG\+\_\+\+MAP\+\_\+\+FORMAT}}~"{}Format of map is incorrect"{}
+\item 
+\#define \mbox{\hyperlink{so__long__bonus_8h_ad531035dd0e7263be90aa96cf526d65a}{WRONG\+\_\+\+MALLOC}}~"{}An error happened in a malloc"{}
+\item 
+\#define \mbox{\hyperlink{so__long__bonus_8h_a8bfc0b8fa2a1c3cc5a0a67a05af77661}{WRONG\+\_\+\+NUM}}~"{}Number of player,exit or collectible is wrong"{}
+\item 
+\#define \mbox{\hyperlink{so__long__bonus_8h_a387fc5732869820a5c7fe036cb965cb9}{MLX\+\_\+\+ERROR}}~"{}There has been an error on MLX"{}
+\item 
+\#define \mbox{\hyperlink{so__long__bonus_8h_a70ed59adcb4159ac551058053e649640}{SIZE}}~64
+\begin{DoxyCompactList}\small\item\em Tile Size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structs__coord}{s\+\_\+coord}} \mbox{\hyperlink{so__long__bonus_8h_ac7cb152d7960b7bef96b34c668115e05}{t\+\_\+point}}
+\begin{DoxyCompactList}\small\item\em Struct for coordinates of the map. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structs__img}{s\+\_\+img}} \mbox{\hyperlink{so__long__bonus_8h_aa2823d71a465849891fd044a6371f982}{t\+\_\+img}}
+\begin{DoxyCompactList}\small\item\em Struct for image/\+Necessary for MLX. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structs__game}{s\+\_\+game}} \mbox{\hyperlink{so__long__bonus_8h_a581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}}
+\begin{DoxyCompactList}\small\item\em Base struct for the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__mandatory_ga5b2f7742130f0285e24d6f54809e6d2d}{dead}} (int num, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Function to show errors and exit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga6f8c99060ef22d071826eeba3987d146}{free\+\_\+all}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Frees Matrix and handles destruction of mlx stuff. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_ga403c73b47a6552da1a7e7f30d72a5e5c}{ft\+\_\+exit}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Function to exit the game cleanly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gaff5e1c3d10cc32d94136857aee2d82d5}{free\+\_\+array}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map, int lines)
+\begin{DoxyCompactList}\small\item\em Frees the map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_gad992176137cf24635a841276dcaa4fc5}{ft\+\_\+n\+\_\+strclen}} (const char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em strclen different from gnl and libft \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group__mandatory_ga05cfbba5108bd97978f664067be17a01}{init}} (void)
+\begin{DoxyCompactList}\small\item\em initializes the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gad3041b29958b42ef7a6ce0e9ab3d9f1f}{read\+\_\+map}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Reads the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga93e1a6b7a1f41474d9f5075b540efc35}{check\+\_\+extension}} (char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Checks extension of file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gae1276ffb5513a5eed559aff247948d74}{map\+\_\+validation}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gad842f3bae90c97a53686550e862dc878}{check\+\_\+map\+\_\+size}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks the map size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gafdf21c9500da5866e8b3b74766bce3f5}{check\+\_\+borders}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks the borders of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga89dd8ca4a7194440f333b24960ec04ae}{check\+\_\+map\+\_\+content}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks the content of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga2c0461427e7a2a3526664c236868c701}{check\+\_\+valid\+\_\+path}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if there is a valid path in the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga01d4cf105130c6233a536807c76f20e9}{check\+\_\+map\+\_\+assets}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if the contents of the map are the one\textquotesingle{}s requested. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gaf63d3926d81de9728b10798bdd7a1aa6}{check\+\_\+collectibles}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if there is not any collectibles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga078b18d6bd7a624fae69fadd2b27c321}{fill\+\_\+map}} (int fd, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Fills our game-\/\texorpdfstring{$>$}{>}map array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga39bdcf5a34b06c1edafcee209662e17d}{init\+\_\+game}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initializes the contents of the struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga2293ef2b23c95e07eda30d66456f74f6}{init\+\_\+img}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initializes the content of the struct which MLX needs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gafd2cd36f1706a81abe9f5f6872c5d13d}{render}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Renders the window and map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga213a46ee57c271c6747a9cca4ff65ef8}{render\+\_\+window}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Renders the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga0e815262248b739a3b6343e83e27cf24}{render\+\_\+map}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Main function to render the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gadb981358aa63fd33f6894ac8bf97cf38}{put\+\_\+tile}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, char \texorpdfstring{$\ast$}{*}tile, int x, int y)
+\begin{DoxyCompactList}\small\item\em Function to put a image to a tile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga8ab90edb27167f755b2def84a1865022}{render\+\_\+corners}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Render the corners of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga007cc3795000f39112131e9d523fab26}{render\+\_\+borders}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Render the borders. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gaa75a74ab397cc0d968f2e359a618cae1}{render\+\_\+tiles}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Render the tiles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga61e76791db45be1689ec0987b9797aa3}{render\+\_\+moves}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Render the tile to show the number of movements. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__mandatory_ga551ee13b93cc4a2624e46c2b60675331}{handle\+\_\+keypress}} (int keysym, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handles the key pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga3f47600d04f05274c665bf6c4c06dac8}{move\+\_\+up}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga4bcb9ea558b232bbfd8f90a6a6de9102}{move\+\_\+down}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement down. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga6e1b56e820e194e0112e8a60f48c8b6a}{move\+\_\+left}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gaa2285f5e59b0441b15b03f2cbac245b6}{move\+\_\+right}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga789bb943d02229bdd9e762060f573b85}{validate\+\_\+move\+\_\+up}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the movement up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_gae42c7add75dcae151d9e94c951d3b643}{validate\+\_\+move\+\_\+down}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the movement down. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga0c5ed68b3c61288ea319d4aed89639fa}{validate\+\_\+move\+\_\+left}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the movement left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__mandatory_ga00a370bf883d7f78d70ad08a28e46f80}{validate\+\_\+move\+\_\+right}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates movement right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaf2b5539861a2c5d24fa93aff998b900d}{attack}} (int keysym, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Function to handle attack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga12a152afa1f1eff1c84782afb853e7aa}{lightsaber}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Detects if player collected the weapon and allows him to attack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga4fac2dab91763a3da0c4ee6e5ad48135}{check\+\_\+attack}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Checks if the player can attack in n direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaf5d5dda7ffe38bbcff68f35491cf7937}{check\+\_\+lose}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Checks if the player collided with enemies based on the direction. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_gad7c8041eebd7e384ed8aac8f161eae41}{render\+\_\+anim}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Renders the "{}movement"{} of the enemies. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga1aceec636eb80a208bb60330a3cb2abc}{check\+\_\+enemy}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Checks if there is an enemy based on direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga895cb8c8b030cb66c6a0b3f6404305cd}{lose}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Lose function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga017c427f0b73a6c6fc94ffcea7fbb8f1}{put\+\_\+health}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int health)
+\begin{DoxyCompactList}\small\item\em Changes a tile based on boss health. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga61feefd7e248c8b60a81906fc7bffffb}{check\+\_\+boss\+\_\+start}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if the boss can spawn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga3a90635fb58551f0faa11b4ec5d657b2}{boss\+\_\+damage}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Handles boss health. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga8f5919d01f601af93fe66b2c0f93e3cd}{check\+\_\+boss}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Handles the boss damage to the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga1f2e4b81a5c4b4f83d2a6cbeaf4c1d7f}{boss\+\_\+anim}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Handles the attack on the boss from below him. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Bonus Program Header. 
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{so__long__bonus_8h_a4a4a74567939e7dc565c909984fa73c7}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!MAP\_ERROR@{MAP\_ERROR}}
+\index{MAP\_ERROR@{MAP\_ERROR}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{MAP\_ERROR}{MAP\_ERROR}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_a4a4a74567939e7dc565c909984fa73c7} 
+\#define MAP\+\_\+\+ERROR~"{}Failed to open map"{}}
+
+\Hypertarget{so__long__bonus_8h_a6acfd3051f5c9ca1df44b4974073f098}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!MAP\_ERROR\_EX@{MAP\_ERROR\_EX}}
+\index{MAP\_ERROR\_EX@{MAP\_ERROR\_EX}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{MAP\_ERROR\_EX}{MAP\_ERROR\_EX}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_a6acfd3051f5c9ca1df44b4974073f098} 
+\#define MAP\+\_\+\+ERROR\+\_\+\+EX~"{}Map extension not allowed"{}}
+
+\Hypertarget{so__long__bonus_8h_a9f0cc07c52db57a96f46108bcce94fd7}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!MAP\_ERROR\_PATH@{MAP\_ERROR\_PATH}}
+\index{MAP\_ERROR\_PATH@{MAP\_ERROR\_PATH}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{MAP\_ERROR\_PATH}{MAP\_ERROR\_PATH}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_a9f0cc07c52db57a96f46108bcce94fd7} 
+\#define MAP\+\_\+\+ERROR\+\_\+\+PATH~"{}Map path is wrong"{}}
+
+\Hypertarget{so__long__bonus_8h_a387fc5732869820a5c7fe036cb965cb9}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!MLX\_ERROR@{MLX\_ERROR}}
+\index{MLX\_ERROR@{MLX\_ERROR}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{MLX\_ERROR}{MLX\_ERROR}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_a387fc5732869820a5c7fe036cb965cb9} 
+\#define MLX\+\_\+\+ERROR~"{}There has been an error on MLX"{}}
+
+\Hypertarget{so__long__bonus_8h_a70ed59adcb4159ac551058053e649640}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!SIZE@{SIZE}}
+\index{SIZE@{SIZE}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{SIZE}{SIZE}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_a70ed59adcb4159ac551058053e649640} 
+\#define SIZE~64}
+
+
+
+Tile Size. 
+
+\Hypertarget{so__long__bonus_8h_ad531035dd0e7263be90aa96cf526d65a}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!WRONG\_MALLOC@{WRONG\_MALLOC}}
+\index{WRONG\_MALLOC@{WRONG\_MALLOC}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{WRONG\_MALLOC}{WRONG\_MALLOC}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_ad531035dd0e7263be90aa96cf526d65a} 
+\#define WRONG\+\_\+\+MALLOC~"{}An error happened in a malloc"{}}
+
+\Hypertarget{so__long__bonus_8h_a225c5a0090d033ec0a73a336759a7b24}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!WRONG\_MAP\_FORMAT@{WRONG\_MAP\_FORMAT}}
+\index{WRONG\_MAP\_FORMAT@{WRONG\_MAP\_FORMAT}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{WRONG\_MAP\_FORMAT}{WRONG\_MAP\_FORMAT}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_a225c5a0090d033ec0a73a336759a7b24} 
+\#define WRONG\+\_\+\+MAP\+\_\+\+FORMAT~"{}Format of map is incorrect"{}}
+
+\Hypertarget{so__long__bonus_8h_a8bfc0b8fa2a1c3cc5a0a67a05af77661}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!WRONG\_NUM@{WRONG\_NUM}}
+\index{WRONG\_NUM@{WRONG\_NUM}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{WRONG\_NUM}{WRONG\_NUM}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_a8bfc0b8fa2a1c3cc5a0a67a05af77661} 
+\#define WRONG\+\_\+\+NUM~"{}Number of player,exit or collectible is wrong"{}}
+
+\Hypertarget{so__long__bonus_8h_a2a6e74814c472500fa41f1dc5127768c}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!WRONG\_SIZE\_MAP@{WRONG\_SIZE\_MAP}}
+\index{WRONG\_SIZE\_MAP@{WRONG\_SIZE\_MAP}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{WRONG\_SIZE\_MAP}{WRONG\_SIZE\_MAP}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_a2a6e74814c472500fa41f1dc5127768c} 
+\#define WRONG\+\_\+\+SIZE\+\_\+\+MAP~"{}Size of the map is incorrect"{}}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{so__long__bonus_8h_a581c914ca5b062bb811c5204f2bf58ff}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!t\_game@{t\_game}}
+\index{t\_game@{t\_game}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_game}{t\_game}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_a581c914ca5b062bb811c5204f2bf58ff} 
+typedef struct \mbox{\hyperlink{structs__game}{s\+\_\+game}} \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}}}
+
+
+
+Base struct for the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Matrix of coords \\
+\hline
+{\em player} & Coords of player \\
+\hline
+{\em width} & X value of the map \\
+\hline
+{\em height} & Y value of the map \\
+\hline
+{\em collectibles} & Collectibles on the map \\
+\hline
+{\em gathered} & Util for flood\+\_\+fill \\
+\hline
+{\em collected} & Collectibles colleted on the map \\
+\hline
+{\em moves} & Num of moves \\
+\hline
+{\em coords} & t\+\_\+point coords \\
+\hline
+{\em player} & t\+\_\+point coords of player \\
+\hline
+{\em exit} & t\+\_\+point coords of exit \\
+\hline
+{\em tile} & t\+\_\+point coords of tiles \\
+\hline
+{\em mlx\+\_\+ptr} & MLX Pointer \\
+\hline
+{\em win\+\_\+ptr} & Window Pointer \\
+\hline
+{\em img} & Img Info \\
+\hline
+{\em lightsaber} & Checker for collectible lightsaber \\
+\hline
+{\em enemies} & Number of enemies \\
+\hline
+{\em spawn} & Checker for boss spawn \\
+\hline
+{\em health} & Checks the boss health \\
+\hline
+{\em movement} & Number of movements when boss spawns \\
+\hline
+\end{DoxyParams}
+\Hypertarget{so__long__bonus_8h_aa2823d71a465849891fd044a6371f982}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!t\_img@{t\_img}}
+\index{t\_img@{t\_img}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_img}{t\_img}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_aa2823d71a465849891fd044a6371f982} 
+typedef struct \mbox{\hyperlink{structs__img}{s\+\_\+img}} \mbox{\hyperlink{mlx__int_8h_aa2823d71a465849891fd044a6371f982}{t\+\_\+img}}}
+
+
+
+Struct for image/\+Necessary for MLX. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mlx\+\_\+img} & MLX Image \\
+\hline
+{\em bpp} & Bytes per Pixel \\
+\hline
+{\em line\+\_\+len} & Necessary for MLX \\
+\hline
+{\em endian} & Necessary for MLX \\
+\hline
+\end{DoxyParams}
+\Hypertarget{so__long__bonus_8h_ac7cb152d7960b7bef96b34c668115e05}\index{so\_long\_bonus.h@{so\_long\_bonus.h}!t\_point@{t\_point}}
+\index{t\_point@{t\_point}!so\_long\_bonus.h@{so\_long\_bonus.h}}
+\doxysubsubsection{\texorpdfstring{t\_point}{t\_point}}
+{\footnotesize\ttfamily \label{so__long__bonus_8h_ac7cb152d7960b7bef96b34c668115e05} 
+typedef struct \mbox{\hyperlink{structs__coord}{s\+\_\+coord}} \mbox{\hyperlink{group__mandatory_gac7cb152d7960b7bef96b34c668115e05}{t\+\_\+point}}}
+
+
+
+Struct for coordinates of the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coord \\
+\hline
+{\em y} & Y coord \\
+\hline
+\end{DoxyParams}

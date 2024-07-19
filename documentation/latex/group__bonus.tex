@@ -1,0 +1,1237 @@
+\doxysection{Bonus}
+\hypertarget{group__bonus}{}\label{group__bonus}\index{Bonus@{Bonus}}
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{attack__bonus_8c}{attack\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Handles the attacks. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{attack__boss__bonus_8c}{attack\+\_\+boss\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Handles boss animation and damage to the player. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{attack__checker__bonus_8c}{attack\+\_\+checker\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Checks the attack and enemies position. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{lightsaber__bonus_8c}{lightsaber\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Weapon check. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{dead__bonus_8c}{dead\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Frees and exit errors. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{boss__bonus_8c}{boss\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Boss related functions. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{boss__health__bonus_8c}{boss\+\_\+health\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Handles boss health. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{enemy__bonus_8c}{enemy\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Renders enemies anim and lose checks. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{init__bonus_8c}{init\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Initializes the struct. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{check__map1__bonus_8c}{check\+\_\+map1\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Verifications of the map 1 + new characters. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{check__map2__bonus_8c}{check\+\_\+map2\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Verifications of the map 2 + new characters. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{checker__bonus_8c}{checker\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Checks the extension of the file. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{map__utils__bonus_8c}{map\+\_\+utils\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Fill the double array and define height and width. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{movement__bonus_8c}{movement\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Movements and win checker + movement animations. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{movement__utils__bonus_8c}{movement\+\_\+utils\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Movement Utilities and handle key pressed. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{render__map__bonus_8c}{render\+\_\+map\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Renders of the map and function to set images on the tiles. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{render__moves__bonus_8c}{render\+\_\+moves\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Renders the tile that shows up the movements. \end{DoxyCompactList}\item 
+file \mbox{\hyperlink{render__window__bonus_8c}{render\+\_\+window\+\_\+bonus.\+c}}
+\begin{DoxyCompactList}\small\item\em Main function to render and render of the window. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__bonus_ga7da4e33acda2ea59b6c3ccbde955af7d}{attack\+\_\+up}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Attack above. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga95cb6c1778f194d52070f43687f54a9a}{attack\+\_\+right}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Attack right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gafb36b50f2b11599bae18da5d0120e5fc}{attack\+\_\+down}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Attack below. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gab26b685a18c06433743cb88a87cb88e3}{attack\+\_\+left}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Attack left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaf2b5539861a2c5d24fa93aff998b900d}{attack}} (int keysym, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Function to handle attack. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga8f5919d01f601af93fe66b2c0f93e3cd}{check\+\_\+boss}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Handles the boss damage to the player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga770cc20b4e3008f8b734e4b83b602b1d}{boss\+\_\+anim4}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handles the attack on the boss from his right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga5f7b09dc3c434d0e47deb38726c64f5e}{boss\+\_\+anim3}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Handles the attack on the boss from above him. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga508018c95df106a1e16b288df8212ac9}{boss\+\_\+anim2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Handles the attack on the boss from his left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga1f2e4b81a5c4b4f83d2a6cbeaf4c1d7f}{boss\+\_\+anim}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Handles the attack on the boss from below him. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga4fac2dab91763a3da0c4ee6e5ad48135}{check\+\_\+attack}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Checks if the player can attack in n direction. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga1aceec636eb80a208bb60330a3cb2abc}{check\+\_\+enemy}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Checks if there is an enemy based on direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga12a152afa1f1eff1c84782afb853e7aa}{lightsaber}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Detects if player collected the weapon and allows him to attack. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga5b2f7742130f0285e24d6f54809e6d2d}{dead}} (int num, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Function to show errors and exit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaff5e1c3d10cc32d94136857aee2d82d5}{free\+\_\+array}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map, int lines)
+\begin{DoxyCompactList}\small\item\em Frees the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga90f18dd18dc30e59718740f3b098004f}{free\+\_\+map}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Frees the Matrix/\+Map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga6f8c99060ef22d071826eeba3987d146}{free\+\_\+all}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Frees Matrix and handles destruction of mlx stuff. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga403c73b47a6552da1a7e7f30d72a5e5c}{ft\+\_\+exit}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Function to exit the game cleanly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga77dc20d9724cd09fd9ad13c435022012}{check\+\_\+contact\+\_\+boss}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int z, int w)
+\begin{DoxyCompactList}\small\item\em Checks if the player is on contact with the attacks of the boss. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaa0ba31a1d2b8b5d14c2ca176d8a61653}{spawn\+\_\+boss\+\_\+stuff}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y, int type)
+\begin{DoxyCompactList}\small\item\em Replace the tiles of the surrounding area of the boss to his attacks. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga5f48a7d374ad785ead907f7f044d31de}{boss\+\_\+loop}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Main Loop for boss. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga31b2b6fd5b330305e4881fb442e220b7}{spawn\+\_\+boss}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Spawns the boss. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga61feefd7e248c8b60a81906fc7bffffb}{check\+\_\+boss\+\_\+start}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if the boss can spawn. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga017c427f0b73a6c6fc94ffcea7fbb8f1}{put\+\_\+health}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int health)
+\begin{DoxyCompactList}\small\item\em Changes a tile based on boss health. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga3a90635fb58551f0faa11b4ec5d657b2}{boss\+\_\+damage}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Handles boss health. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_gad7c8041eebd7e384ed8aac8f161eae41}{render\+\_\+anim}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Renders the "{}movement"{} of the enemies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga895cb8c8b030cb66c6a0b3f6404305cd}{lose}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Lose function. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga58484c95c6425b1439b7ef2823b7c458}{check\+\_\+lose2}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Checks if the player collided with enemies based on the direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaf5d5dda7ffe38bbcff68f35491cf7937}{check\+\_\+lose}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int n)
+\begin{DoxyCompactList}\small\item\em Checks if the player collided with enemies based on the direction. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga39bdcf5a34b06c1edafcee209662e17d}{init\+\_\+game}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initializes the contents of the struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga2293ef2b23c95e07eda30d66456f74f6}{init\+\_\+img}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initializes the content of the struct which MLX needs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group__bonus_ga05cfbba5108bd97978f664067be17a01}{init}} (void)
+\begin{DoxyCompactList}\small\item\em Start the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga80748c2ae257352ec399335f5f97b604}{count\+\_\+map\+\_\+assets}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Counts if the map has the necessary things to work. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga89dd8ca4a7194440f333b24960ec04ae}{check\+\_\+map\+\_\+content}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks the content of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gad842f3bae90c97a53686550e862dc878}{check\+\_\+map\+\_\+size}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks the map size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gafdf21c9500da5866e8b3b74766bce3f5}{check\+\_\+borders}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks the borders of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gae1276ffb5513a5eed559aff247948d74}{map\+\_\+validation}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga0b7cff1787dc09751d1b9a85a401fd5c}{flood\+\_\+fill}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Flood Fill Algorithm. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga2c0461427e7a2a3526664c236868c701}{check\+\_\+valid\+\_\+path}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if there is a valid path in the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga01d4cf105130c6233a536807c76f20e9}{check\+\_\+map\+\_\+assets}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if the contents of the map are the one\textquotesingle{}s requested. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaf63d3926d81de9728b10798bdd7a1aa6}{check\+\_\+collectibles}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if there is not any collectibles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga93e1a6b7a1f41474d9f5075b540efc35}{check\+\_\+extension}} (char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Checks extension of file. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_gad992176137cf24635a841276dcaa4fc5}{ft\+\_\+n\+\_\+strclen}} (const char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em strclen different from gnl and libft \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga168a92ecf8a04871f1043248547a5ed2}{count\+\_\+lines}} (char \texorpdfstring{$\ast$}{*}file\+Name)
+\begin{DoxyCompactList}\small\item\em Count the number of lines in the file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga078b18d6bd7a624fae69fadd2b27c321}{fill\+\_\+map}} (int fd, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Fills our game-\/\texorpdfstring{$>$}{>}map array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gad3041b29958b42ef7a6ce0e9ab3d9f1f}{read\+\_\+map}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Reads the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga04fae2235375f7783a61d2af1ece1ce1}{check\+\_\+win}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Win Checker. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga3f47600d04f05274c665bf6c4c06dac8}{move\+\_\+up}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga4bcb9ea558b232bbfd8f90a6a6de9102}{move\+\_\+down}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement down. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga6e1b56e820e194e0112e8a60f48c8b6a}{move\+\_\+left}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaa2285f5e59b0441b15b03f2cbac245b6}{move\+\_\+right}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement right. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__bonus_ga551ee13b93cc4a2624e46c2b60675331}{handle\+\_\+keypress}} (int keysym, \mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handles the key pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga789bb943d02229bdd9e762060f573b85}{validate\+\_\+move\+\_\+up}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the movement up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gae42c7add75dcae151d9e94c951d3b643}{validate\+\_\+move\+\_\+down}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the movement down. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga0c5ed68b3c61288ea319d4aed89639fa}{validate\+\_\+move\+\_\+left}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the movement left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga00a370bf883d7f78d70ad08a28e46f80}{validate\+\_\+move\+\_\+right}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates movement right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gadb981358aa63fd33f6894ac8bf97cf38}{put\+\_\+tile}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, char \texorpdfstring{$\ast$}{*}tile, int x, int y)
+\begin{DoxyCompactList}\small\item\em Function to put a image to a tile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga8ab90edb27167f755b2def84a1865022}{render\+\_\+corners}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Render the corners of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga007cc3795000f39112131e9d523fab26}{render\+\_\+borders}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Render the borders. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gaa75a74ab397cc0d968f2e359a618cae1}{render\+\_\+tiles}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Render the tiles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga0e815262248b739a3b6343e83e27cf24}{render\+\_\+map}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Main function to render the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga61e76791db45be1689ec0987b9797aa3}{render\+\_\+moves}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Render the tile to show the number of movements. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_ga213a46ee57c271c6747a9cca4ff65ef8}{render\+\_\+window}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Renders the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__bonus_gafd2cd36f1706a81abe9f5f6872c5d13d}{render}} (\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Renders the window and map. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Bonus Part 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group__bonus_gaf2b5539861a2c5d24fa93aff998b900d}\index{Bonus@{Bonus}!attack@{attack}}
+\index{attack@{attack}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
+{\footnotesize\ttfamily \label{group__bonus_gaf2b5539861a2c5d24fa93aff998b900d} 
+void attack (\begin{DoxyParamCaption}\item[{int}]{keysym}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Function to handle attack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keysym} & Key Pressed (Arrow Keys) \\
+\hline
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gafb36b50f2b11599bae18da5d0120e5fc}\index{Bonus@{Bonus}!attack\_down@{attack\_down}}
+\index{attack\_down@{attack\_down}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{attack\_down()}{attack\_down()}}
+{\footnotesize\ttfamily \label{group__bonus_gafb36b50f2b11599bae18da5d0120e5fc} 
+void attack\+\_\+down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Attack below. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gab26b685a18c06433743cb88a87cb88e3}\index{Bonus@{Bonus}!attack\_left@{attack\_left}}
+\index{attack\_left@{attack\_left}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{attack\_left()}{attack\_left()}}
+{\footnotesize\ttfamily \label{group__bonus_gab26b685a18c06433743cb88a87cb88e3} 
+void attack\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Attack left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga95cb6c1778f194d52070f43687f54a9a}\index{Bonus@{Bonus}!attack\_right@{attack\_right}}
+\index{attack\_right@{attack\_right}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{attack\_right()}{attack\_right()}}
+{\footnotesize\ttfamily \label{group__bonus_ga95cb6c1778f194d52070f43687f54a9a} 
+void attack\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Attack right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga7da4e33acda2ea59b6c3ccbde955af7d}\index{Bonus@{Bonus}!attack\_up@{attack\_up}}
+\index{attack\_up@{attack\_up}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{attack\_up()}{attack\_up()}}
+{\footnotesize\ttfamily \label{group__bonus_ga7da4e33acda2ea59b6c3ccbde955af7d} 
+void attack\+\_\+up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Attack above. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga1f2e4b81a5c4b4f83d2a6cbeaf4c1d7f}\index{Bonus@{Bonus}!boss\_anim@{boss\_anim}}
+\index{boss\_anim@{boss\_anim}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{boss\_anim()}{boss\_anim()}}
+{\footnotesize\ttfamily \label{group__bonus_ga1f2e4b81a5c4b4f83d2a6cbeaf4c1d7f} 
+void boss\+\_\+anim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Handles the attack on the boss from below him. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em n} & Direction of player \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga508018c95df106a1e16b288df8212ac9}\index{Bonus@{Bonus}!boss\_anim2@{boss\_anim2}}
+\index{boss\_anim2@{boss\_anim2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{boss\_anim2()}{boss\_anim2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga508018c95df106a1e16b288df8212ac9} 
+void boss\+\_\+anim2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Handles the attack on the boss from his left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em n} & Direction of player \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga5f7b09dc3c434d0e47deb38726c64f5e}\index{Bonus@{Bonus}!boss\_anim3@{boss\_anim3}}
+\index{boss\_anim3@{boss\_anim3}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{boss\_anim3()}{boss\_anim3()}}
+{\footnotesize\ttfamily \label{group__bonus_ga5f7b09dc3c434d0e47deb38726c64f5e} 
+void boss\+\_\+anim3 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Handles the attack on the boss from above him. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em n} & Direction of player \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga770cc20b4e3008f8b734e4b83b602b1d}\index{Bonus@{Bonus}!boss\_anim4@{boss\_anim4}}
+\index{boss\_anim4@{boss\_anim4}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{boss\_anim4()}{boss\_anim4()}}
+{\footnotesize\ttfamily \label{group__bonus_ga770cc20b4e3008f8b734e4b83b602b1d} 
+void boss\+\_\+anim4 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Handles the attack on the boss from his right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em n} & Direction of player \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga3a90635fb58551f0faa11b4ec5d657b2}\index{Bonus@{Bonus}!boss\_damage@{boss\_damage}}
+\index{boss\_damage@{boss\_damage}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{boss\_damage()}{boss\_damage()}}
+{\footnotesize\ttfamily \label{group__bonus_ga3a90635fb58551f0faa11b4ec5d657b2} 
+void boss\+\_\+damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Handles boss health. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em n} & Direction of player \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga5f48a7d374ad785ead907f7f044d31de}\index{Bonus@{Bonus}!boss\_loop@{boss\_loop}}
+\index{boss\_loop@{boss\_loop}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{boss\_loop()}{boss\_loop()}}
+{\footnotesize\ttfamily \label{group__bonus_ga5f48a7d374ad785ead907f7f044d31de} 
+int boss\+\_\+loop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Main Loop for boss. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga4fac2dab91763a3da0c4ee6e5ad48135}\index{Bonus@{Bonus}!check\_attack@{check\_attack}}
+\index{check\_attack@{check\_attack}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_attack()}{check\_attack()}}
+{\footnotesize\ttfamily \label{group__bonus_ga4fac2dab91763a3da0c4ee6e5ad48135} 
+int check\+\_\+attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the player can attack in n direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em n} & Direction of the attack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if not allowed otherwise 0 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_gafdf21c9500da5866e8b3b74766bce3f5}\index{Bonus@{Bonus}!check\_borders@{check\_borders}}
+\index{check\_borders@{check\_borders}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_borders()}{check\_borders()}}
+{\footnotesize\ttfamily \label{group__bonus_gafdf21c9500da5866e8b3b74766bce3f5} 
+void check\+\_\+borders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks the borders of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga8f5919d01f601af93fe66b2c0f93e3cd}\index{Bonus@{Bonus}!check\_boss@{check\_boss}}
+\index{check\_boss@{check\_boss}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_boss()}{check\_boss()}}
+{\footnotesize\ttfamily \label{group__bonus_ga8f5919d01f601af93fe66b2c0f93e3cd} 
+int check\+\_\+boss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Handles the boss damage to the player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em n} & Direction of player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if player is outside of boss range otherwise 0 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga61feefd7e248c8b60a81906fc7bffffb}\index{Bonus@{Bonus}!check\_boss\_start@{check\_boss\_start}}
+\index{check\_boss\_start@{check\_boss\_start}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_boss\_start()}{check\_boss\_start()}}
+{\footnotesize\ttfamily \label{group__bonus_ga61feefd7e248c8b60a81906fc7bffffb} 
+void check\+\_\+boss\+\_\+start (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the boss can spawn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaf63d3926d81de9728b10798bdd7a1aa6}\index{Bonus@{Bonus}!check\_collectibles@{check\_collectibles}}
+\index{check\_collectibles@{check\_collectibles}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_collectibles()}{check\_collectibles()}}
+{\footnotesize\ttfamily \label{group__bonus_gaf63d3926d81de9728b10798bdd7a1aa6} 
+void check\+\_\+collectibles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks if there is not any collectibles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga77dc20d9724cd09fd9ad13c435022012}\index{Bonus@{Bonus}!check\_contact\_boss@{check\_contact\_boss}}
+\index{check\_contact\_boss@{check\_contact\_boss}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_contact\_boss()}{check\_contact\_boss()}}
+{\footnotesize\ttfamily \label{group__bonus_ga77dc20d9724cd09fd9ad13c435022012} 
+void check\+\_\+contact\+\_\+boss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{z}{, }\item[{int}]{w}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the player is on contact with the attacks of the boss. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em z} & X coord \\
+\hline
+{\em w} & Y coord \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga1aceec636eb80a208bb60330a3cb2abc}\index{Bonus@{Bonus}!check\_enemy@{check\_enemy}}
+\index{check\_enemy@{check\_enemy}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_enemy()}{check\_enemy()}}
+{\footnotesize\ttfamily \label{group__bonus_ga1aceec636eb80a208bb60330a3cb2abc} 
+int check\+\_\+enemy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Checks if there is an enemy based on direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em n} & Direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if found enemy otherwise 0 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga93e1a6b7a1f41474d9f5075b540efc35}\index{Bonus@{Bonus}!check\_extension@{check\_extension}}
+\index{check\_extension@{check\_extension}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_extension()}{check\_extension()}}
+{\footnotesize\ttfamily \label{group__bonus_ga93e1a6b7a1f41474d9f5075b540efc35} 
+void check\+\_\+extension (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Checks extension of file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Name of file \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaf5d5dda7ffe38bbcff68f35491cf7937}\index{Bonus@{Bonus}!check\_lose@{check\_lose}}
+\index{check\_lose@{check\_lose}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_lose()}{check\_lose()}}
+{\footnotesize\ttfamily \label{group__bonus_gaf5d5dda7ffe38bbcff68f35491cf7937} 
+void check\+\_\+lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the player collided with enemies based on the direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em n} & Direction (Right and UP) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga58484c95c6425b1439b7ef2823b7c458}\index{Bonus@{Bonus}!check\_lose2@{check\_lose2}}
+\index{check\_lose2@{check\_lose2}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_lose2()}{check\_lose2()}}
+{\footnotesize\ttfamily \label{group__bonus_ga58484c95c6425b1439b7ef2823b7c458} 
+void check\+\_\+lose2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the player collided with enemies based on the direction. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em n} & Direction (Left and Down) \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga01d4cf105130c6233a536807c76f20e9}\index{Bonus@{Bonus}!check\_map\_assets@{check\_map\_assets}}
+\index{check\_map\_assets@{check\_map\_assets}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_map\_assets()}{check\_map\_assets()}}
+{\footnotesize\ttfamily \label{group__bonus_ga01d4cf105130c6233a536807c76f20e9} 
+void check\+\_\+map\+\_\+assets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the contents of the map are the one\textquotesingle{}s requested. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga89dd8ca4a7194440f333b24960ec04ae}\index{Bonus@{Bonus}!check\_map\_content@{check\_map\_content}}
+\index{check\_map\_content@{check\_map\_content}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_map\_content()}{check\_map\_content()}}
+{\footnotesize\ttfamily \label{group__bonus_ga89dd8ca4a7194440f333b24960ec04ae} 
+void check\+\_\+map\+\_\+content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks the content of the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gad842f3bae90c97a53686550e862dc878}\index{Bonus@{Bonus}!check\_map\_size@{check\_map\_size}}
+\index{check\_map\_size@{check\_map\_size}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_map\_size()}{check\_map\_size()}}
+{\footnotesize\ttfamily \label{group__bonus_gad842f3bae90c97a53686550e862dc878} 
+void check\+\_\+map\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks the map size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga2c0461427e7a2a3526664c236868c701}\index{Bonus@{Bonus}!check\_valid\_path@{check\_valid\_path}}
+\index{check\_valid\_path@{check\_valid\_path}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_valid\_path()}{check\_valid\_path()}}
+{\footnotesize\ttfamily \label{group__bonus_ga2c0461427e7a2a3526664c236868c701} 
+void check\+\_\+valid\+\_\+path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks if there is a valid path in the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga04fae2235375f7783a61d2af1ece1ce1}\index{Bonus@{Bonus}!check\_win@{check\_win}}
+\index{check\_win@{check\_win}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{check\_win()}{check\_win()}}
+{\footnotesize\ttfamily \label{group__bonus_ga04fae2235375f7783a61d2af1ece1ce1} 
+void check\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Win Checker. 
+
+Besides checking if the player has won, also allows the player to collect the lightsaber and check if the boss can spawn 
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga168a92ecf8a04871f1043248547a5ed2}\index{Bonus@{Bonus}!count\_lines@{count\_lines}}
+\index{count\_lines@{count\_lines}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{count\_lines()}{count\_lines()}}
+{\footnotesize\ttfamily \label{group__bonus_ga168a92ecf8a04871f1043248547a5ed2} 
+int count\+\_\+lines (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Count the number of lines in the file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Name of the file \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Number of lines 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga80748c2ae257352ec399335f5f97b604}\index{Bonus@{Bonus}!count\_map\_assets@{count\_map\_assets}}
+\index{count\_map\_assets@{count\_map\_assets}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{count\_map\_assets()}{count\_map\_assets()}}
+{\footnotesize\ttfamily \label{group__bonus_ga80748c2ae257352ec399335f5f97b604} 
+void count\+\_\+map\+\_\+assets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Counts if the map has the necessary things to work. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga5b2f7742130f0285e24d6f54809e6d2d}\index{Bonus@{Bonus}!dead@{dead}}
+\index{dead@{dead}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{dead()}{dead()}}
+{\footnotesize\ttfamily \label{group__bonus_ga5b2f7742130f0285e24d6f54809e6d2d} 
+void dead (\begin{DoxyParamCaption}\item[{int}]{num}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Function to show errors and exit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Num of the error \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga078b18d6bd7a624fae69fadd2b27c321}\index{Bonus@{Bonus}!fill\_map@{fill\_map}}
+\index{fill\_map@{fill\_map}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{fill\_map()}{fill\_map()}}
+{\footnotesize\ttfamily \label{group__bonus_ga078b18d6bd7a624fae69fadd2b27c321} 
+void fill\+\_\+map (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Fills our game-\/\texorpdfstring{$>$}{>}map array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & File name \\
+\hline
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga0b7cff1787dc09751d1b9a85a401fd5c}\index{Bonus@{Bonus}!flood\_fill@{flood\_fill}}
+\index{flood\_fill@{flood\_fill}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{flood\_fill()}{flood\_fill()}}
+{\footnotesize\ttfamily \label{group__bonus_ga0b7cff1787dc09751d1b9a85a401fd5c} 
+void flood\+\_\+fill (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{map}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Flood Fill Algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Duplicate of original matrix \\
+\hline
+{\em game} & Struct of the game \\
+\hline
+{\em x} & X Coord \\
+\hline
+{\em y} & Y Coord \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga6f8c99060ef22d071826eeba3987d146}\index{Bonus@{Bonus}!free\_all@{free\_all}}
+\index{free\_all@{free\_all}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{free\_all()}{free\_all()}}
+{\footnotesize\ttfamily \label{group__bonus_ga6f8c99060ef22d071826eeba3987d146} 
+void free\+\_\+all (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Frees Matrix and handles destruction of mlx stuff. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaff5e1c3d10cc32d94136857aee2d82d5}\index{Bonus@{Bonus}!free\_array@{free\_array}}
+\index{free\_array@{free\_array}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{free\_array()}{free\_array()}}
+{\footnotesize\ttfamily \label{group__bonus_gaff5e1c3d10cc32d94136857aee2d82d5} 
+void free\+\_\+array (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{map}{, }\item[{int}]{lines}{}\end{DoxyParamCaption})}
+
+
+
+Frees the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & The map matrix \\
+\hline
+{\em lines} & The lines of the matrix \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga90f18dd18dc30e59718740f3b098004f}\index{Bonus@{Bonus}!free\_map@{free\_map}}
+\index{free\_map@{free\_map}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{free\_map()}{free\_map()}}
+{\footnotesize\ttfamily \label{group__bonus_ga90f18dd18dc30e59718740f3b098004f} 
+void free\+\_\+map (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{map}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Frees the Matrix/\+Map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Matrix/\+Map \\
+\hline
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga403c73b47a6552da1a7e7f30d72a5e5c}\index{Bonus@{Bonus}!ft\_exit@{ft\_exit}}
+\index{ft\_exit@{ft\_exit}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{ft\_exit()}{ft\_exit()}}
+{\footnotesize\ttfamily \label{group__bonus_ga403c73b47a6552da1a7e7f30d72a5e5c} 
+int ft\+\_\+exit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Function to exit the game cleanly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gad992176137cf24635a841276dcaa4fc5}\index{Bonus@{Bonus}!ft\_n\_strclen@{ft\_n\_strclen}}
+\index{ft\_n\_strclen@{ft\_n\_strclen}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{ft\_n\_strclen()}{ft\_n\_strclen()}}
+{\footnotesize\ttfamily \label{group__bonus_gad992176137cf24635a841276dcaa4fc5} 
+int ft\+\_\+n\+\_\+strclen (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+
+
+strclen different from gnl and libft 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of the string stop characters 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga551ee13b93cc4a2624e46c2b60675331}\index{Bonus@{Bonus}!handle\_keypress@{handle\_keypress}}
+\index{handle\_keypress@{handle\_keypress}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{handle\_keypress()}{handle\_keypress()}}
+{\footnotesize\ttfamily \label{group__bonus_ga551ee13b93cc4a2624e46c2b60675331} 
+int handle\+\_\+keypress (\begin{DoxyParamCaption}\item[{int}]{keysym}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Handles the key pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keysym} & Necessary for mlx \\
+\hline
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga05cfbba5108bd97978f664067be17a01}\index{Bonus@{Bonus}!init@{init}}
+\index{init@{init}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{group__bonus_ga05cfbba5108bd97978f664067be17a01} 
+\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*} init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Start the game. 
+
+initializes the game
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Game Struct 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga39bdcf5a34b06c1edafcee209662e17d}\index{Bonus@{Bonus}!init\_game@{init\_game}}
+\index{init\_game@{init\_game}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_game()}{init\_game()}}
+{\footnotesize\ttfamily \label{group__bonus_ga39bdcf5a34b06c1edafcee209662e17d} 
+void init\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the contents of the struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga2293ef2b23c95e07eda30d66456f74f6}\index{Bonus@{Bonus}!init\_img@{init\_img}}
+\index{init\_img@{init\_img}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{init\_img()}{init\_img()}}
+{\footnotesize\ttfamily \label{group__bonus_ga2293ef2b23c95e07eda30d66456f74f6} 
+void init\+\_\+img (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the content of the struct which MLX needs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga12a152afa1f1eff1c84782afb853e7aa}\index{Bonus@{Bonus}!lightsaber@{lightsaber}}
+\index{lightsaber@{lightsaber}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{lightsaber()}{lightsaber()}}
+{\footnotesize\ttfamily \label{group__bonus_ga12a152afa1f1eff1c84782afb853e7aa} 
+void lightsaber (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Detects if player collected the weapon and allows him to attack. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga895cb8c8b030cb66c6a0b3f6404305cd}\index{Bonus@{Bonus}!lose@{lose}}
+\index{lose@{lose}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{lose()}{lose()}}
+{\footnotesize\ttfamily \label{group__bonus_ga895cb8c8b030cb66c6a0b3f6404305cd} 
+void lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Lose function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gae1276ffb5513a5eed559aff247948d74}\index{Bonus@{Bonus}!map\_validation@{map\_validation}}
+\index{map\_validation@{map\_validation}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{map\_validation()}{map\_validation()}}
+{\footnotesize\ttfamily \label{group__bonus_gae1276ffb5513a5eed559aff247948d74} 
+void map\+\_\+validation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Validates the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga4bcb9ea558b232bbfd8f90a6a6de9102}\index{Bonus@{Bonus}!move\_down@{move\_down}}
+\index{move\_down@{move\_down}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{move\_down()}{move\_down()}}
+{\footnotesize\ttfamily \label{group__bonus_ga4bcb9ea558b232bbfd8f90a6a6de9102} 
+void move\+\_\+down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Movement down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga6e1b56e820e194e0112e8a60f48c8b6a}\index{Bonus@{Bonus}!move\_left@{move\_left}}
+\index{move\_left@{move\_left}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{move\_left()}{move\_left()}}
+{\footnotesize\ttfamily \label{group__bonus_ga6e1b56e820e194e0112e8a60f48c8b6a} 
+void move\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Movement left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaa2285f5e59b0441b15b03f2cbac245b6}\index{Bonus@{Bonus}!move\_right@{move\_right}}
+\index{move\_right@{move\_right}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{move\_right()}{move\_right()}}
+{\footnotesize\ttfamily \label{group__bonus_gaa2285f5e59b0441b15b03f2cbac245b6} 
+void move\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Movement right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga3f47600d04f05274c665bf6c4c06dac8}\index{Bonus@{Bonus}!move\_up@{move\_up}}
+\index{move\_up@{move\_up}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{move\_up()}{move\_up()}}
+{\footnotesize\ttfamily \label{group__bonus_ga3f47600d04f05274c665bf6c4c06dac8} 
+void move\+\_\+up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Movement up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga017c427f0b73a6c6fc94ffcea7fbb8f1}\index{Bonus@{Bonus}!put\_health@{put\_health}}
+\index{put\_health@{put\_health}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{put\_health()}{put\_health()}}
+{\footnotesize\ttfamily \label{group__bonus_ga017c427f0b73a6c6fc94ffcea7fbb8f1} 
+void put\+\_\+health (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{health}{}\end{DoxyParamCaption})}
+
+
+
+Changes a tile based on boss health. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em health} & Boss Health \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gadb981358aa63fd33f6894ac8bf97cf38}\index{Bonus@{Bonus}!put\_tile@{put\_tile}}
+\index{put\_tile@{put\_tile}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{put\_tile()}{put\_tile()}}
+{\footnotesize\ttfamily \label{group__bonus_gadb981358aa63fd33f6894ac8bf97cf38} 
+void put\+\_\+tile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{tile}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Function to put a image to a tile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em tile} & Coords of the tile \\
+\hline
+{\em x} & X coord \\
+\hline
+{\em y} & Y coord \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gad3041b29958b42ef7a6ce0e9ab3d9f1f}\index{Bonus@{Bonus}!read\_map@{read\_map}}
+\index{read\_map@{read\_map}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{read\_map()}{read\_map()}}
+{\footnotesize\ttfamily \label{group__bonus_gad3041b29958b42ef7a6ce0e9ab3d9f1f} 
+void read\+\_\+map (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Reads the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Name of file \\
+\hline
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gafd2cd36f1706a81abe9f5f6872c5d13d}\index{Bonus@{Bonus}!render@{render}}
+\index{render@{render}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{group__bonus_gafd2cd36f1706a81abe9f5f6872c5d13d} 
+void render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Renders the window and map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gad7c8041eebd7e384ed8aac8f161eae41}\index{Bonus@{Bonus}!render\_anim@{render\_anim}}
+\index{render\_anim@{render\_anim}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_anim()}{render\_anim()}}
+{\footnotesize\ttfamily \label{group__bonus_gad7c8041eebd7e384ed8aac8f161eae41} 
+int render\+\_\+anim (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Renders the "{}movement"{} of the enemies. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+~\newline
+ 
+\end{DoxyReturn}
+\Hypertarget{group__bonus_ga007cc3795000f39112131e9d523fab26}\index{Bonus@{Bonus}!render\_borders@{render\_borders}}
+\index{render\_borders@{render\_borders}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_borders()}{render\_borders()}}
+{\footnotesize\ttfamily \label{group__bonus_ga007cc3795000f39112131e9d523fab26} 
+void render\+\_\+borders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Render the borders. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em x} & X coord \\
+\hline
+{\em y} & Y coord \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga8ab90edb27167f755b2def84a1865022}\index{Bonus@{Bonus}!render\_corners@{render\_corners}}
+\index{render\_corners@{render\_corners}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_corners()}{render\_corners()}}
+{\footnotesize\ttfamily \label{group__bonus_ga8ab90edb27167f755b2def84a1865022} 
+void render\+\_\+corners (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Render the corners of the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em x} & X coord \\
+\hline
+{\em y} & Y coord \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga0e815262248b739a3b6343e83e27cf24}\index{Bonus@{Bonus}!render\_map@{render\_map}}
+\index{render\_map@{render\_map}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_map()}{render\_map()}}
+{\footnotesize\ttfamily \label{group__bonus_ga0e815262248b739a3b6343e83e27cf24} 
+void render\+\_\+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Main function to render the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga61e76791db45be1689ec0987b9797aa3}\index{Bonus@{Bonus}!render\_moves@{render\_moves}}
+\index{render\_moves@{render\_moves}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_moves()}{render\_moves()}}
+{\footnotesize\ttfamily \label{group__bonus_ga61e76791db45be1689ec0987b9797aa3} 
+void render\+\_\+moves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Render the tile to show the number of movements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaa75a74ab397cc0d968f2e359a618cae1}\index{Bonus@{Bonus}!render\_tiles@{render\_tiles}}
+\index{render\_tiles@{render\_tiles}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_tiles()}{render\_tiles()}}
+{\footnotesize\ttfamily \label{group__bonus_gaa75a74ab397cc0d968f2e359a618cae1} 
+void render\+\_\+tiles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Render the tiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em x} & X coord \\
+\hline
+{\em y} & Y coord \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga213a46ee57c271c6747a9cca4ff65ef8}\index{Bonus@{Bonus}!render\_window@{render\_window}}
+\index{render\_window@{render\_window}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{render\_window()}{render\_window()}}
+{\footnotesize\ttfamily \label{group__bonus_ga213a46ee57c271c6747a9cca4ff65ef8} 
+void render\+\_\+window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Renders the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga31b2b6fd5b330305e4881fb442e220b7}\index{Bonus@{Bonus}!spawn\_boss@{spawn\_boss}}
+\index{spawn\_boss@{spawn\_boss}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{spawn\_boss()}{spawn\_boss()}}
+{\footnotesize\ttfamily \label{group__bonus_ga31b2b6fd5b330305e4881fb442e220b7} 
+void spawn\+\_\+boss (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Spawns the boss. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em x} & X Coord \\
+\hline
+{\em y} & Y Coord \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gaa0ba31a1d2b8b5d14c2ca176d8a61653}\index{Bonus@{Bonus}!spawn\_boss\_stuff@{spawn\_boss\_stuff}}
+\index{spawn\_boss\_stuff@{spawn\_boss\_stuff}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{spawn\_boss\_stuff()}{spawn\_boss\_stuff()}}
+{\footnotesize\ttfamily \label{group__bonus_gaa0ba31a1d2b8b5d14c2ca176d8a61653} 
+void spawn\+\_\+boss\+\_\+stuff (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{, }\item[{int}]{type}{}\end{DoxyParamCaption})}
+
+
+
+Replace the tiles of the surrounding area of the boss to his attacks. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em x} & X Coord \\
+\hline
+{\em y} & Y Coord \\
+\hline
+{\em type} & Works as boolean to check what to put on tiles \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_gae42c7add75dcae151d9e94c951d3b643}\index{Bonus@{Bonus}!validate\_move\_down@{validate\_move\_down}}
+\index{validate\_move\_down@{validate\_move\_down}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{validate\_move\_down()}{validate\_move\_down()}}
+{\footnotesize\ttfamily \label{group__bonus_gae42c7add75dcae151d9e94c951d3b643} 
+void validate\+\_\+move\+\_\+down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Validates the movement down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga0c5ed68b3c61288ea319d4aed89639fa}\index{Bonus@{Bonus}!validate\_move\_left@{validate\_move\_left}}
+\index{validate\_move\_left@{validate\_move\_left}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{validate\_move\_left()}{validate\_move\_left()}}
+{\footnotesize\ttfamily \label{group__bonus_ga0c5ed68b3c61288ea319d4aed89639fa} 
+void validate\+\_\+move\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Validates the movement left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga00a370bf883d7f78d70ad08a28e46f80}\index{Bonus@{Bonus}!validate\_move\_right@{validate\_move\_right}}
+\index{validate\_move\_right@{validate\_move\_right}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{validate\_move\_right()}{validate\_move\_right()}}
+{\footnotesize\ttfamily \label{group__bonus_ga00a370bf883d7f78d70ad08a28e46f80} 
+void validate\+\_\+move\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Validates movement right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__bonus_ga789bb943d02229bdd9e762060f573b85}\index{Bonus@{Bonus}!validate\_move\_up@{validate\_move\_up}}
+\index{validate\_move\_up@{validate\_move\_up}!Bonus@{Bonus}}
+\doxysubsubsection{\texorpdfstring{validate\_move\_up()}{validate\_move\_up()}}
+{\footnotesize\ttfamily \label{group__bonus_ga789bb943d02229bdd9e762060f573b85} 
+void validate\+\_\+move\+\_\+up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__mandatory_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Validates the movement up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}

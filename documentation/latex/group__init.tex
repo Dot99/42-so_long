@@ -1,0 +1,820 @@
+\doxysection{Program Header}
+\hypertarget{group__init}{}\label{group__init}\index{Program Header@{Program Header}}
+\doxysubsubsection*{Files}
+\begin{DoxyCompactItemize}
+\item 
+file \mbox{\hyperlink{so__long_8h}{so\+\_\+long.\+h}}
+\begin{DoxyCompactList}\small\item\em Program Header. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structs__coord}{s\+\_\+coord}}
+\begin{DoxyCompactList}\small\item\em Struct for coordinates of the map. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structs__img}{s\+\_\+img}}
+\begin{DoxyCompactList}\small\item\em Struct for image/\+Necessary for MLX. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{structs__game}{s\+\_\+game}}
+\begin{DoxyCompactList}\small\item\em Base struct of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group__init_ga4a4a74567939e7dc565c909984fa73c7}{MAP\+\_\+\+ERROR}}~"{}Failed to open map"{}
+\item 
+\#define \mbox{\hyperlink{group__init_ga6acfd3051f5c9ca1df44b4974073f098}{MAP\+\_\+\+ERROR\+\_\+\+EX}}~"{}Map extension not allowed"{}
+\item 
+\#define \mbox{\hyperlink{group__init_ga9f0cc07c52db57a96f46108bcce94fd7}{MAP\+\_\+\+ERROR\+\_\+\+PATH}}~"{}Map path is wrong"{}
+\item 
+\#define \mbox{\hyperlink{group__init_ga2a6e74814c472500fa41f1dc5127768c}{WRONG\+\_\+\+SIZE\+\_\+\+MAP}}~"{}Size of the map is incorrect"{}
+\item 
+\#define \mbox{\hyperlink{group__init_ga225c5a0090d033ec0a73a336759a7b24}{WRONG\+\_\+\+MAP\+\_\+\+FORMAT}}~"{}Format of map is incorrect"{}
+\item 
+\#define \mbox{\hyperlink{group__init_gad531035dd0e7263be90aa96cf526d65a}{WRONG\+\_\+\+MALLOC}}~"{}An error happened in a malloc"{}
+\item 
+\#define \mbox{\hyperlink{group__init_ga8bfc0b8fa2a1c3cc5a0a67a05af77661}{WRONG\+\_\+\+NUM}}~"{}Number of player,exit or collectible is wrong"{}
+\item 
+\#define \mbox{\hyperlink{group__init_ga387fc5732869820a5c7fe036cb965cb9}{MLX\+\_\+\+ERROR}}~"{}There has been an error on MLX"{}
+\item 
+\#define \mbox{\hyperlink{group__init_ga70ed59adcb4159ac551058053e649640}{SIZE}}~64
+\begin{DoxyCompactList}\small\item\em Tile Size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structs__coord}{s\+\_\+coord}} \mbox{\hyperlink{group__init_gac7cb152d7960b7bef96b34c668115e05}{t\+\_\+point}}
+\begin{DoxyCompactList}\small\item\em Struct for coordinates of the map. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structs__img}{s\+\_\+img}} \mbox{\hyperlink{group__init_gaa2823d71a465849891fd044a6371f982}{t\+\_\+img}}
+\begin{DoxyCompactList}\small\item\em Struct for image/\+Necessary for MLX. \end{DoxyCompactList}\item 
+typedef struct \mbox{\hyperlink{structs__game}{s\+\_\+game}} \mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}}
+\begin{DoxyCompactList}\small\item\em Base struct of the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{group__init_ga5b2f7742130f0285e24d6f54809e6d2d}{dead}} (int num, \mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Function to show errors and exit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga6f8c99060ef22d071826eeba3987d146}{free\+\_\+all}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Frees Matrix and handles destruction of mlx stuff. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__init_ga403c73b47a6552da1a7e7f30d72a5e5c}{ft\+\_\+exit}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Function to exit the game cleanly. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_gaff5e1c3d10cc32d94136857aee2d82d5}{free\+\_\+array}} (char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}map, int lines)
+\begin{DoxyCompactList}\small\item\em Frees the map. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__init_gad992176137cf24635a841276dcaa4fc5}{ft\+\_\+n\+\_\+strclen}} (const char \texorpdfstring{$\ast$}{*}str)
+\begin{DoxyCompactList}\small\item\em strclen different from gnl and libft \end{DoxyCompactList}\item 
+\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{group__init_ga05cfbba5108bd97978f664067be17a01}{init}} (void)
+\begin{DoxyCompactList}\small\item\em initializes the game \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_gad3041b29958b42ef7a6ce0e9ab3d9f1f}{read\+\_\+map}} (char \texorpdfstring{$\ast$}{*}file, \mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Reads the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga93e1a6b7a1f41474d9f5075b540efc35}{check\+\_\+extension}} (char \texorpdfstring{$\ast$}{*}file)
+\begin{DoxyCompactList}\small\item\em Checks extension of file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_gae1276ffb5513a5eed559aff247948d74}{map\+\_\+validation}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_gad842f3bae90c97a53686550e862dc878}{check\+\_\+map\+\_\+size}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks the map size. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_gafdf21c9500da5866e8b3b74766bce3f5}{check\+\_\+borders}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks the borders of the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga89dd8ca4a7194440f333b24960ec04ae}{check\+\_\+map\+\_\+content}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks the content of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga2c0461427e7a2a3526664c236868c701}{check\+\_\+valid\+\_\+path}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if there is a valid path in the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga01d4cf105130c6233a536807c76f20e9}{check\+\_\+map\+\_\+assets}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if the contents of the map are the one\textquotesingle{}s requested. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_gaf63d3926d81de9728b10798bdd7a1aa6}{check\+\_\+collectibles}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Checks if there is not any collectibles. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga078b18d6bd7a624fae69fadd2b27c321}{fill\+\_\+map}} (int fd, \mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Fills our game-\/\texorpdfstring{$>$}{>}map array. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga39bdcf5a34b06c1edafcee209662e17d}{init\+\_\+game}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initializes the contents of the struct. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga2293ef2b23c95e07eda30d66456f74f6}{init\+\_\+img}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Initializes the content of the struct which MLX needs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_gafd2cd36f1706a81abe9f5f6872c5d13d}{render}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Renders the window and map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga213a46ee57c271c6747a9cca4ff65ef8}{render\+\_\+window}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Renders the game. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga0e815262248b739a3b6343e83e27cf24}{render\+\_\+map}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Main function to render the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_gadb981358aa63fd33f6894ac8bf97cf38}{put\+\_\+tile}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, char \texorpdfstring{$\ast$}{*}tile, int x, int y)
+\begin{DoxyCompactList}\small\item\em Function to put a image to a tile. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga8ab90edb27167f755b2def84a1865022}{render\+\_\+corners}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Render the corners of the map. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga007cc3795000f39112131e9d523fab26}{render\+\_\+borders}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Render the borders. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_gaa75a74ab397cc0d968f2e359a618cae1}{render\+\_\+tiles}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game, int x, int y)
+\begin{DoxyCompactList}\small\item\em Render the tiles. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{group__init_ga551ee13b93cc4a2624e46c2b60675331}{handle\+\_\+keypress}} (int keysym, \mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Handles the key pressed. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga3f47600d04f05274c665bf6c4c06dac8}{move\+\_\+up}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga4bcb9ea558b232bbfd8f90a6a6de9102}{move\+\_\+down}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement down. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga6e1b56e820e194e0112e8a60f48c8b6a}{move\+\_\+left}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_gaa2285f5e59b0441b15b03f2cbac245b6}{move\+\_\+right}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Movement right. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga789bb943d02229bdd9e762060f573b85}{validate\+\_\+move\+\_\+up}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the movement up. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_gae42c7add75dcae151d9e94c951d3b643}{validate\+\_\+move\+\_\+down}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the movement down. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga0c5ed68b3c61288ea319d4aed89639fa}{validate\+\_\+move\+\_\+left}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates the movement left. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{group__init_ga00a370bf883d7f78d70ad08a28e46f80}{validate\+\_\+move\+\_\+right}} (\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}game)
+\begin{DoxyCompactList}\small\item\em Validates movement right. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{group__init_ga4a4a74567939e7dc565c909984fa73c7}\index{Program Header@{Program Header}!MAP\_ERROR@{MAP\_ERROR}}
+\index{MAP\_ERROR@{MAP\_ERROR}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{MAP\_ERROR}{MAP\_ERROR}}
+{\footnotesize\ttfamily \label{group__init_ga4a4a74567939e7dc565c909984fa73c7} 
+\#define MAP\+\_\+\+ERROR~"{}Failed to open map"{}}
+
+\Hypertarget{group__init_ga6acfd3051f5c9ca1df44b4974073f098}\index{Program Header@{Program Header}!MAP\_ERROR\_EX@{MAP\_ERROR\_EX}}
+\index{MAP\_ERROR\_EX@{MAP\_ERROR\_EX}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{MAP\_ERROR\_EX}{MAP\_ERROR\_EX}}
+{\footnotesize\ttfamily \label{group__init_ga6acfd3051f5c9ca1df44b4974073f098} 
+\#define MAP\+\_\+\+ERROR\+\_\+\+EX~"{}Map extension not allowed"{}}
+
+\Hypertarget{group__init_ga9f0cc07c52db57a96f46108bcce94fd7}\index{Program Header@{Program Header}!MAP\_ERROR\_PATH@{MAP\_ERROR\_PATH}}
+\index{MAP\_ERROR\_PATH@{MAP\_ERROR\_PATH}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{MAP\_ERROR\_PATH}{MAP\_ERROR\_PATH}}
+{\footnotesize\ttfamily \label{group__init_ga9f0cc07c52db57a96f46108bcce94fd7} 
+\#define MAP\+\_\+\+ERROR\+\_\+\+PATH~"{}Map path is wrong"{}}
+
+\Hypertarget{group__init_ga387fc5732869820a5c7fe036cb965cb9}\index{Program Header@{Program Header}!MLX\_ERROR@{MLX\_ERROR}}
+\index{MLX\_ERROR@{MLX\_ERROR}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{MLX\_ERROR}{MLX\_ERROR}}
+{\footnotesize\ttfamily \label{group__init_ga387fc5732869820a5c7fe036cb965cb9} 
+\#define MLX\+\_\+\+ERROR~"{}There has been an error on MLX"{}}
+
+\Hypertarget{group__init_ga70ed59adcb4159ac551058053e649640}\index{Program Header@{Program Header}!SIZE@{SIZE}}
+\index{SIZE@{SIZE}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{SIZE}{SIZE}}
+{\footnotesize\ttfamily \label{group__init_ga70ed59adcb4159ac551058053e649640} 
+\#define SIZE~64}
+
+
+
+Tile Size. 
+
+\Hypertarget{group__init_gad531035dd0e7263be90aa96cf526d65a}\index{Program Header@{Program Header}!WRONG\_MALLOC@{WRONG\_MALLOC}}
+\index{WRONG\_MALLOC@{WRONG\_MALLOC}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{WRONG\_MALLOC}{WRONG\_MALLOC}}
+{\footnotesize\ttfamily \label{group__init_gad531035dd0e7263be90aa96cf526d65a} 
+\#define WRONG\+\_\+\+MALLOC~"{}An error happened in a malloc"{}}
+
+\Hypertarget{group__init_ga225c5a0090d033ec0a73a336759a7b24}\index{Program Header@{Program Header}!WRONG\_MAP\_FORMAT@{WRONG\_MAP\_FORMAT}}
+\index{WRONG\_MAP\_FORMAT@{WRONG\_MAP\_FORMAT}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{WRONG\_MAP\_FORMAT}{WRONG\_MAP\_FORMAT}}
+{\footnotesize\ttfamily \label{group__init_ga225c5a0090d033ec0a73a336759a7b24} 
+\#define WRONG\+\_\+\+MAP\+\_\+\+FORMAT~"{}Format of map is incorrect"{}}
+
+\Hypertarget{group__init_ga8bfc0b8fa2a1c3cc5a0a67a05af77661}\index{Program Header@{Program Header}!WRONG\_NUM@{WRONG\_NUM}}
+\index{WRONG\_NUM@{WRONG\_NUM}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{WRONG\_NUM}{WRONG\_NUM}}
+{\footnotesize\ttfamily \label{group__init_ga8bfc0b8fa2a1c3cc5a0a67a05af77661} 
+\#define WRONG\+\_\+\+NUM~"{}Number of player,exit or collectible is wrong"{}}
+
+\Hypertarget{group__init_ga2a6e74814c472500fa41f1dc5127768c}\index{Program Header@{Program Header}!WRONG\_SIZE\_MAP@{WRONG\_SIZE\_MAP}}
+\index{WRONG\_SIZE\_MAP@{WRONG\_SIZE\_MAP}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{WRONG\_SIZE\_MAP}{WRONG\_SIZE\_MAP}}
+{\footnotesize\ttfamily \label{group__init_ga2a6e74814c472500fa41f1dc5127768c} 
+\#define WRONG\+\_\+\+SIZE\+\_\+\+MAP~"{}Size of the map is incorrect"{}}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{group__init_ga581c914ca5b062bb811c5204f2bf58ff}\index{Program Header@{Program Header}!t\_game@{t\_game}}
+\index{t\_game@{t\_game}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{t\_game}{t\_game}}
+{\footnotesize\ttfamily \label{group__init_ga581c914ca5b062bb811c5204f2bf58ff} 
+typedef struct \mbox{\hyperlink{structs__game}{s\+\_\+game}} \mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}}}
+
+
+
+Base struct of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & Matrix of coords \\
+\hline
+{\em player} & Coords of player \\
+\hline
+{\em width} & X value of the map \\
+\hline
+{\em height} & Y value of the map \\
+\hline
+{\em collectibles} & Collectibles on the map \\
+\hline
+{\em gathered} & Util for flood\+\_\+fill \\
+\hline
+{\em collected} & Collectibles colleted on the map \\
+\hline
+{\em moves} & Num of moves \\
+\hline
+{\em coords} & t\+\_\+point coords \\
+\hline
+{\em player} & t\+\_\+point coords of player \\
+\hline
+{\em exit} & t\+\_\+point coords of exit \\
+\hline
+{\em tile} & t\+\_\+point coords of tiles \\
+\hline
+{\em mlx\+\_\+ptr} & MLX Pointer \\
+\hline
+{\em win\+\_\+ptr} & Window Pointer \\
+\hline
+{\em img} & img info \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gaa2823d71a465849891fd044a6371f982}\index{Program Header@{Program Header}!t\_img@{t\_img}}
+\index{t\_img@{t\_img}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{t\_img}{t\_img}}
+{\footnotesize\ttfamily \label{group__init_gaa2823d71a465849891fd044a6371f982} 
+typedef struct \mbox{\hyperlink{structs__img}{s\+\_\+img}} \mbox{\hyperlink{mlx__int_8h_aa2823d71a465849891fd044a6371f982}{t\+\_\+img}}}
+
+
+
+Struct for image/\+Necessary for MLX. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mlx\+\_\+img} & MLX Image \\
+\hline
+{\em bpp} & Bytes per Pixel \\
+\hline
+{\em line\+\_\+len} & Necessary for MLX \\
+\hline
+{\em endian} & Necessary for MLX \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gac7cb152d7960b7bef96b34c668115e05}\index{Program Header@{Program Header}!t\_point@{t\_point}}
+\index{t\_point@{t\_point}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{t\_point}{t\_point}}
+{\footnotesize\ttfamily \label{group__init_gac7cb152d7960b7bef96b34c668115e05} 
+typedef struct \mbox{\hyperlink{structs__coord}{s\+\_\+coord}} \mbox{\hyperlink{group__init_gac7cb152d7960b7bef96b34c668115e05}{t\+\_\+point}}}
+
+
+
+Struct for coordinates of the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & X coord \\
+\hline
+{\em y} & Y coord \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{group__init_gafdf21c9500da5866e8b3b74766bce3f5}\index{Program Header@{Program Header}!check\_borders@{check\_borders}}
+\index{check\_borders@{check\_borders}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{check\_borders()}{check\_borders()}}
+{\footnotesize\ttfamily \label{group__init_gafdf21c9500da5866e8b3b74766bce3f5} 
+void check\+\_\+borders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks the borders of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gaf63d3926d81de9728b10798bdd7a1aa6}\index{Program Header@{Program Header}!check\_collectibles@{check\_collectibles}}
+\index{check\_collectibles@{check\_collectibles}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{check\_collectibles()}{check\_collectibles()}}
+{\footnotesize\ttfamily \label{group__init_gaf63d3926d81de9728b10798bdd7a1aa6} 
+void check\+\_\+collectibles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks if there is not any collectibles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga93e1a6b7a1f41474d9f5075b540efc35}\index{Program Header@{Program Header}!check\_extension@{check\_extension}}
+\index{check\_extension@{check\_extension}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{check\_extension()}{check\_extension()}}
+{\footnotesize\ttfamily \label{group__init_ga93e1a6b7a1f41474d9f5075b540efc35} 
+void check\+\_\+extension (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{}\end{DoxyParamCaption})}
+
+
+
+Checks extension of file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Name of file \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga01d4cf105130c6233a536807c76f20e9}\index{Program Header@{Program Header}!check\_map\_assets@{check\_map\_assets}}
+\index{check\_map\_assets@{check\_map\_assets}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{check\_map\_assets()}{check\_map\_assets()}}
+{\footnotesize\ttfamily \label{group__init_ga01d4cf105130c6233a536807c76f20e9} 
+void check\+\_\+map\+\_\+assets (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks if the contents of the map are the one\textquotesingle{}s requested. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga89dd8ca4a7194440f333b24960ec04ae}\index{Program Header@{Program Header}!check\_map\_content@{check\_map\_content}}
+\index{check\_map\_content@{check\_map\_content}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{check\_map\_content()}{check\_map\_content()}}
+{\footnotesize\ttfamily \label{group__init_ga89dd8ca4a7194440f333b24960ec04ae} 
+void check\+\_\+map\+\_\+content (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks the content of the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gad842f3bae90c97a53686550e862dc878}\index{Program Header@{Program Header}!check\_map\_size@{check\_map\_size}}
+\index{check\_map\_size@{check\_map\_size}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{check\_map\_size()}{check\_map\_size()}}
+{\footnotesize\ttfamily \label{group__init_gad842f3bae90c97a53686550e862dc878} 
+void check\+\_\+map\+\_\+size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks the map size. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga2c0461427e7a2a3526664c236868c701}\index{Program Header@{Program Header}!check\_valid\_path@{check\_valid\_path}}
+\index{check\_valid\_path@{check\_valid\_path}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{check\_valid\_path()}{check\_valid\_path()}}
+{\footnotesize\ttfamily \label{group__init_ga2c0461427e7a2a3526664c236868c701} 
+void check\+\_\+valid\+\_\+path (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Checks if there is a valid path in the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga5b2f7742130f0285e24d6f54809e6d2d}\index{Program Header@{Program Header}!dead@{dead}}
+\index{dead@{dead}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{dead()}{dead()}}
+{\footnotesize\ttfamily \label{group__init_ga5b2f7742130f0285e24d6f54809e6d2d} 
+void dead (\begin{DoxyParamCaption}\item[{int}]{num}{, }\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Function to show errors and exit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & Num of the error \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga078b18d6bd7a624fae69fadd2b27c321}\index{Program Header@{Program Header}!fill\_map@{fill\_map}}
+\index{fill\_map@{fill\_map}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{fill\_map()}{fill\_map()}}
+{\footnotesize\ttfamily \label{group__init_ga078b18d6bd7a624fae69fadd2b27c321} 
+void fill\+\_\+map (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Fills our game-\/\texorpdfstring{$>$}{>}map array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & File name \\
+\hline
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga6f8c99060ef22d071826eeba3987d146}\index{Program Header@{Program Header}!free\_all@{free\_all}}
+\index{free\_all@{free\_all}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{free\_all()}{free\_all()}}
+{\footnotesize\ttfamily \label{group__init_ga6f8c99060ef22d071826eeba3987d146} 
+void free\+\_\+all (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Frees Matrix and handles destruction of mlx stuff. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gaff5e1c3d10cc32d94136857aee2d82d5}\index{Program Header@{Program Header}!free\_array@{free\_array}}
+\index{free\_array@{free\_array}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{free\_array()}{free\_array()}}
+{\footnotesize\ttfamily \label{group__init_gaff5e1c3d10cc32d94136857aee2d82d5} 
+void free\+\_\+array (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{map}{, }\item[{int}]{lines}{}\end{DoxyParamCaption})}
+
+
+
+Frees the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & The map matrix \\
+\hline
+{\em lines} & The lines of the matrix \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga403c73b47a6552da1a7e7f30d72a5e5c}\index{Program Header@{Program Header}!ft\_exit@{ft\_exit}}
+\index{ft\_exit@{ft\_exit}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{ft\_exit()}{ft\_exit()}}
+{\footnotesize\ttfamily \label{group__init_ga403c73b47a6552da1a7e7f30d72a5e5c} 
+int ft\+\_\+exit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Function to exit the game cleanly. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gad992176137cf24635a841276dcaa4fc5}\index{Program Header@{Program Header}!ft\_n\_strclen@{ft\_n\_strclen}}
+\index{ft\_n\_strclen@{ft\_n\_strclen}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{ft\_n\_strclen()}{ft\_n\_strclen()}}
+{\footnotesize\ttfamily \label{group__init_gad992176137cf24635a841276dcaa4fc5} 
+int ft\+\_\+n\+\_\+strclen (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+
+
+strclen different from gnl and libft 
+
+
+\begin{DoxyParams}{Parameters}
+{\em str} & String to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The size of the string stop characters 
+\end{DoxyReturn}
+\Hypertarget{group__init_ga551ee13b93cc4a2624e46c2b60675331}\index{Program Header@{Program Header}!handle\_keypress@{handle\_keypress}}
+\index{handle\_keypress@{handle\_keypress}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{handle\_keypress()}{handle\_keypress()}}
+{\footnotesize\ttfamily \label{group__init_ga551ee13b93cc4a2624e46c2b60675331} 
+int handle\+\_\+keypress (\begin{DoxyParamCaption}\item[{int}]{keysym}{, }\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Handles the key pressed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em keysym} & Necessary for mlx \\
+\hline
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga05cfbba5108bd97978f664067be17a01}\index{Program Header@{Program Header}!init@{init}}
+\index{init@{init}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{group__init_ga05cfbba5108bd97978f664067be17a01} 
+\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*} init (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+initializes the game 
+
+\begin{DoxyReturn}{Returns}
+Game Struct
+\end{DoxyReturn}
+initializes the game
+
+
+\begin{DoxyParams}{Parameters}
+{\em void} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Game Struct 
+\end{DoxyReturn}
+\Hypertarget{group__init_ga39bdcf5a34b06c1edafcee209662e17d}\index{Program Header@{Program Header}!init\_game@{init\_game}}
+\index{init\_game@{init\_game}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{init\_game()}{init\_game()}}
+{\footnotesize\ttfamily \label{group__init_ga39bdcf5a34b06c1edafcee209662e17d} 
+void init\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the contents of the struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga2293ef2b23c95e07eda30d66456f74f6}\index{Program Header@{Program Header}!init\_img@{init\_img}}
+\index{init\_img@{init\_img}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{init\_img()}{init\_img()}}
+{\footnotesize\ttfamily \label{group__init_ga2293ef2b23c95e07eda30d66456f74f6} 
+void init\+\_\+img (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Initializes the content of the struct which MLX needs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game\\
+\hline
+{\em game} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gae1276ffb5513a5eed559aff247948d74}\index{Program Header@{Program Header}!map\_validation@{map\_validation}}
+\index{map\_validation@{map\_validation}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{map\_validation()}{map\_validation()}}
+{\footnotesize\ttfamily \label{group__init_gae1276ffb5513a5eed559aff247948d74} 
+void map\+\_\+validation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Validates the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga4bcb9ea558b232bbfd8f90a6a6de9102}\index{Program Header@{Program Header}!move\_down@{move\_down}}
+\index{move\_down@{move\_down}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{move\_down()}{move\_down()}}
+{\footnotesize\ttfamily \label{group__init_ga4bcb9ea558b232bbfd8f90a6a6de9102} 
+void move\+\_\+down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Movement down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga6e1b56e820e194e0112e8a60f48c8b6a}\index{Program Header@{Program Header}!move\_left@{move\_left}}
+\index{move\_left@{move\_left}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{move\_left()}{move\_left()}}
+{\footnotesize\ttfamily \label{group__init_ga6e1b56e820e194e0112e8a60f48c8b6a} 
+void move\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Movement left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gaa2285f5e59b0441b15b03f2cbac245b6}\index{Program Header@{Program Header}!move\_right@{move\_right}}
+\index{move\_right@{move\_right}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{move\_right()}{move\_right()}}
+{\footnotesize\ttfamily \label{group__init_gaa2285f5e59b0441b15b03f2cbac245b6} 
+void move\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Movement right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga3f47600d04f05274c665bf6c4c06dac8}\index{Program Header@{Program Header}!move\_up@{move\_up}}
+\index{move\_up@{move\_up}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{move\_up()}{move\_up()}}
+{\footnotesize\ttfamily \label{group__init_ga3f47600d04f05274c665bf6c4c06dac8} 
+void move\+\_\+up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Movement up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gadb981358aa63fd33f6894ac8bf97cf38}\index{Program Header@{Program Header}!put\_tile@{put\_tile}}
+\index{put\_tile@{put\_tile}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{put\_tile()}{put\_tile()}}
+{\footnotesize\ttfamily \label{group__init_gadb981358aa63fd33f6894ac8bf97cf38} 
+void put\+\_\+tile (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{tile}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Function to put a image to a tile. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em tile} & Coords of the tile \\
+\hline
+{\em x} & X coord \\
+\hline
+{\em y} & Y coord \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gad3041b29958b42ef7a6ce0e9ab3d9f1f}\index{Program Header@{Program Header}!read\_map@{read\_map}}
+\index{read\_map@{read\_map}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{read\_map()}{read\_map()}}
+{\footnotesize\ttfamily \label{group__init_gad3041b29958b42ef7a6ce0e9ab3d9f1f} 
+void read\+\_\+map (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{file}{, }\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Reads the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em file} & Name of file \\
+\hline
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gafd2cd36f1706a81abe9f5f6872c5d13d}\index{Program Header@{Program Header}!render@{render}}
+\index{render@{render}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily \label{group__init_gafd2cd36f1706a81abe9f5f6872c5d13d} 
+void render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Renders the window and map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & ~\newline
+ \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga007cc3795000f39112131e9d523fab26}\index{Program Header@{Program Header}!render\_borders@{render\_borders}}
+\index{render\_borders@{render\_borders}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{render\_borders()}{render\_borders()}}
+{\footnotesize\ttfamily \label{group__init_ga007cc3795000f39112131e9d523fab26} 
+void render\+\_\+borders (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Render the borders. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em x} & X coord \\
+\hline
+{\em y} & Y coord \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga8ab90edb27167f755b2def84a1865022}\index{Program Header@{Program Header}!render\_corners@{render\_corners}}
+\index{render\_corners@{render\_corners}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{render\_corners()}{render\_corners()}}
+{\footnotesize\ttfamily \label{group__init_ga8ab90edb27167f755b2def84a1865022} 
+void render\+\_\+corners (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Render the corners of the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em x} & X coord \\
+\hline
+{\em y} & Y coord \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga0e815262248b739a3b6343e83e27cf24}\index{Program Header@{Program Header}!render\_map@{render\_map}}
+\index{render\_map@{render\_map}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{render\_map()}{render\_map()}}
+{\footnotesize\ttfamily \label{group__init_ga0e815262248b739a3b6343e83e27cf24} 
+void render\+\_\+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Main function to render the map. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gaa75a74ab397cc0d968f2e359a618cae1}\index{Program Header@{Program Header}!render\_tiles@{render\_tiles}}
+\index{render\_tiles@{render\_tiles}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{render\_tiles()}{render\_tiles()}}
+{\footnotesize\ttfamily \label{group__init_gaa75a74ab397cc0d968f2e359a618cae1} 
+void render\+\_\+tiles (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{, }\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption})}
+
+
+
+Render the tiles. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+{\em x} & X coord \\
+\hline
+{\em y} & Y coord \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga213a46ee57c271c6747a9cca4ff65ef8}\index{Program Header@{Program Header}!render\_window@{render\_window}}
+\index{render\_window@{render\_window}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{render\_window()}{render\_window()}}
+{\footnotesize\ttfamily \label{group__init_ga213a46ee57c271c6747a9cca4ff65ef8} 
+void render\+\_\+window (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Renders the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_gae42c7add75dcae151d9e94c951d3b643}\index{Program Header@{Program Header}!validate\_move\_down@{validate\_move\_down}}
+\index{validate\_move\_down@{validate\_move\_down}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{validate\_move\_down()}{validate\_move\_down()}}
+{\footnotesize\ttfamily \label{group__init_gae42c7add75dcae151d9e94c951d3b643} 
+void validate\+\_\+move\+\_\+down (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Validates the movement down. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga0c5ed68b3c61288ea319d4aed89639fa}\index{Program Header@{Program Header}!validate\_move\_left@{validate\_move\_left}}
+\index{validate\_move\_left@{validate\_move\_left}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{validate\_move\_left()}{validate\_move\_left()}}
+{\footnotesize\ttfamily \label{group__init_ga0c5ed68b3c61288ea319d4aed89639fa} 
+void validate\+\_\+move\+\_\+left (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Validates the movement left. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga00a370bf883d7f78d70ad08a28e46f80}\index{Program Header@{Program Header}!validate\_move\_right@{validate\_move\_right}}
+\index{validate\_move\_right@{validate\_move\_right}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{validate\_move\_right()}{validate\_move\_right()}}
+{\footnotesize\ttfamily \label{group__init_ga00a370bf883d7f78d70ad08a28e46f80} 
+void validate\+\_\+move\+\_\+right (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Validates movement right. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}
+\Hypertarget{group__init_ga789bb943d02229bdd9e762060f573b85}\index{Program Header@{Program Header}!validate\_move\_up@{validate\_move\_up}}
+\index{validate\_move\_up@{validate\_move\_up}!Program Header@{Program Header}}
+\doxysubsubsection{\texorpdfstring{validate\_move\_up()}{validate\_move\_up()}}
+{\footnotesize\ttfamily \label{group__init_ga789bb943d02229bdd9e762060f573b85} 
+void validate\+\_\+move\+\_\+up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group__init_ga581c914ca5b062bb811c5204f2bf58ff}{t\+\_\+game}} \texorpdfstring{$\ast$}{*}}]{game}{}\end{DoxyParamCaption})}
+
+
+
+Validates the movement up. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game} & Struct of the game \\
+\hline
+\end{DoxyParams}

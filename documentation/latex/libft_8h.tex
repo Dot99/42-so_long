@@ -1,0 +1,537 @@
+\doxysection{lib/libft/libft.h File Reference}
+\hypertarget{libft_8h}{}\label{libft_8h}\index{lib/libft/libft.h@{lib/libft/libft.h}}
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+{\ttfamily \#include $<$stdarg.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+Include dependency graph for libft.\+h\+:
+% FIG 0
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structs__list}{s\+\_\+list}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{libft_8h_a6b20d41d6252e9871430c242cb1a56e7}{BUFFER\+\_\+\+SIZE}}~42
+\item 
+\#define \mbox{\hyperlink{libft_8h_ae9c7a3fcf619f9aeb244f8e85a68097f}{MAX\+\_\+\+FD}}~1024
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{structs__list}{s\+\_\+list}} \mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{libft_8h_a5937ab0d08e31d0e3e4a16ec71e293a1}{ft\+\_\+bzero}} (void \texorpdfstring{$\ast$}{*}s, size\+\_\+t n)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_af1c70b339fb306ee15c723bc7d73077f}{ft\+\_\+calloc}} (size\+\_\+t nitems, size\+\_\+t size)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_ab45d9468eadf75be6bbf1dd45471d94f}{ft\+\_\+memchr}} (const void \texorpdfstring{$\ast$}{*}str, int c, size\+\_\+t n)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a5f5c5d19b1f0355d9768c75d30ed5559}{ft\+\_\+memcpy}} (void \texorpdfstring{$\ast$}{*}dst, const void \texorpdfstring{$\ast$}{*}src, size\+\_\+t n)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a1701e739d77435f7da46349295e6f66f}{ft\+\_\+memmove}} (void \texorpdfstring{$\ast$}{*}s1, const void \texorpdfstring{$\ast$}{*}s2, size\+\_\+t n)
+\item 
+void \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_aa2a7776abbcd9bf9929fb9a3ce4f713c}{ft\+\_\+memset}} (void \texorpdfstring{$\ast$}{*}str, int c, size\+\_\+t n)
+\item 
+void \mbox{\hyperlink{libft_8h_a8ee15a511946c1397bd2bdea4aed6aee}{ft\+\_\+putchar\+\_\+fd}} (char c, int fd)
+\item 
+void \mbox{\hyperlink{libft_8h_aeb112152acfc553d58d61a5df38afcde}{ft\+\_\+putendl\+\_\+fd}} (char \texorpdfstring{$\ast$}{*}s, int fd)
+\item 
+void \mbox{\hyperlink{libft_8h_a63cc0aec12256d125d3f85e472280972}{ft\+\_\+putnbr\+\_\+fd}} (int n, int fd)
+\item 
+void \mbox{\hyperlink{libft_8h_acefce9ac519f8f8b7d3fde33dbafe469}{ft\+\_\+putstr\+\_\+fd}} (char \texorpdfstring{$\ast$}{*}s, int fd)
+\item 
+void \mbox{\hyperlink{libft_8h_ada722cffd2c6c8169ae339afd0f9763c}{ft\+\_\+striteri}} (char \texorpdfstring{$\ast$}{*}s, void(\texorpdfstring{$\ast$}{*}f)(unsigned int, char \texorpdfstring{$\ast$}{*}))
+\item 
+int \mbox{\hyperlink{libft_8h_afad2ec371b4188602da9a94db687cb16}{ft\+\_\+atoi}} (const char \texorpdfstring{$\ast$}{*}str)
+\item 
+int \mbox{\hyperlink{libft_8h_a9c2c3821ea43ebdf97de07b123503f8b}{ft\+\_\+isalnum}} (int c)
+\item 
+int \mbox{\hyperlink{libft_8h_ac283963beaa3b8c7d09b78851cda297e}{ft\+\_\+isalpha}} (int c)
+\item 
+int \mbox{\hyperlink{libft_8h_abf60ddbec6479540e81f3648cf71f1f4}{ft\+\_\+isascii}} (int c)
+\item 
+int \mbox{\hyperlink{libft_8h_a2cf15b8a1a277d1e2ce3654101a2003d}{ft\+\_\+isdigit}} (int c)
+\item 
+int \mbox{\hyperlink{libft_8h_abcdba69692f21146aeea5b3d59b7d0ca}{ft\+\_\+isprint}} (int c)
+\item 
+int \mbox{\hyperlink{libft_8h_a08f665a1828c402f2ffe2e2187f135fc}{ft\+\_\+memcmp}} (const void \texorpdfstring{$\ast$}{*}s1, const void \texorpdfstring{$\ast$}{*}s2, size\+\_\+t n)
+\item 
+size\+\_\+t \mbox{\hyperlink{libft_8h_a95e2e717644c36f51c890a3207b9d25a}{ft\+\_\+strlcat}} (char \texorpdfstring{$\ast$}{*}dst, const char \texorpdfstring{$\ast$}{*}src, size\+\_\+t n)
+\item 
+size\+\_\+t \mbox{\hyperlink{libft_8h_a1a5d7631e872903cdfd1ede2548752d9}{ft\+\_\+strlcpy}} (char \texorpdfstring{$\ast$}{*}dst, const char \texorpdfstring{$\ast$}{*}src, size\+\_\+t n)
+\item 
+size\+\_\+t \mbox{\hyperlink{libft_8h_a625026087c3697a3ce0c1e47fb8a6168}{ft\+\_\+strlen}} (char const \texorpdfstring{$\ast$}{*}str)
+\item 
+int \mbox{\hyperlink{libft_8h_a19baff9ee48ede504ea36dc2abe1914f}{ft\+\_\+strncmp}} (char const \texorpdfstring{$\ast$}{*}s1, char const \texorpdfstring{$\ast$}{*}s2, size\+\_\+t n)
+\item 
+int \mbox{\hyperlink{libft_8h_ab86e5297914753b6c82d7e3c3020ce17}{ft\+\_\+tolower}} (int c)
+\item 
+int \mbox{\hyperlink{libft_8h_aef116be7b5bceafff4b59f20a4433d12}{ft\+\_\+toupper}} (int c)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_af0c4dbae2a90feb1f5a346bb2eb1fbc5}{ft\+\_\+strchr}} (const char \texorpdfstring{$\ast$}{*}str, int c)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_aebe73f27c70c56ac5053f860ef5436c9}{ft\+\_\+strdup}} (const char \texorpdfstring{$\ast$}{*}s)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a47b1509d9da13cbe0300503f20a76d8f}{ft\+\_\+strnstr}} (const char \texorpdfstring{$\ast$}{*}origin, const char \texorpdfstring{$\ast$}{*}find, size\+\_\+t n)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a527dfea8e1b8fa683f39f39ba2c91f66}{ft\+\_\+strrchr}} (const char \texorpdfstring{$\ast$}{*}str, int c)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a8a6ea3765dfd826eabfc00d36e28ea38}{ft\+\_\+itoa}} (int n)
+\item 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_aa8168592c967f35d35af01d3b209096d}{ft\+\_\+split}} (char const \texorpdfstring{$\ast$}{*}str, char c)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a91e6e3e428bcc9f2291b700e1829b82b}{ft\+\_\+strjoin}} (char const \texorpdfstring{$\ast$}{*}s1, char const \texorpdfstring{$\ast$}{*}s2)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a668b60557bfc9d60c2d3ccda8afadf49}{ft\+\_\+strmapi}} (char const \texorpdfstring{$\ast$}{*}s, char(\texorpdfstring{$\ast$}{*}f)(unsigned int, char))
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a60352c5b39fab08469b3e28131a79e25}{ft\+\_\+strtrim}} (char const \texorpdfstring{$\ast$}{*}s1, char const \texorpdfstring{$\ast$}{*}set)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a78c402cbf3d55b1374693c3b7d34f71d}{ft\+\_\+substr}} (char const \texorpdfstring{$\ast$}{*}s, unsigned int start, size\+\_\+t len)
+\item 
+void \mbox{\hyperlink{libft_8h_a0195e4eb88fad15717ed90524ac15771}{ft\+\_\+lstadd\+\_\+front}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}lst, \mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}new)
+\item 
+void \mbox{\hyperlink{libft_8h_a4c10e88fffc3c9467eb16e6debd227a4}{ft\+\_\+lstadd\+\_\+back}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}lst, \mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}new)
+\item 
+void \mbox{\hyperlink{libft_8h_a6e900cfaea2857bbf490f3105e38da93}{ft\+\_\+lstclear}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}lst, void(\texorpdfstring{$\ast$}{*}del)(void \texorpdfstring{$\ast$}{*}))
+\item 
+void \mbox{\hyperlink{libft_8h_ac2b881501f9ee2f3ed5718f6d9ebee7c}{ft\+\_\+lstdelone}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}lst, void(\texorpdfstring{$\ast$}{*}del)(void \texorpdfstring{$\ast$}{*}))
+\item 
+void \mbox{\hyperlink{libft_8h_a1888c62a89ec3d206f2ed4590f4a021d}{ft\+\_\+lstiter}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}lst, void(\texorpdfstring{$\ast$}{*}f)(void \texorpdfstring{$\ast$}{*}))
+\item 
+int \mbox{\hyperlink{libft_8h_a9da614988ac99446db9df99d2c773fc1}{ft\+\_\+lstsize}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}lst)
+\item 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a8fe4ea6f56f5a2a75ee13d97416b60ed}{ft\+\_\+lstnew}} (void \texorpdfstring{$\ast$}{*}content)
+\item 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_aed5f9b5ecc45235a7b7cf9d4b24e43dc}{ft\+\_\+lstlast}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}lst)
+\item 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a8198d1837ffbba05823f5e85afebf9c6}{ft\+\_\+lstmap}} (\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}lst, void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*}f)(void \texorpdfstring{$\ast$}{*}), void(\texorpdfstring{$\ast$}{*}del)(void \texorpdfstring{$\ast$}{*}))
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a642d7f3c5c7ee564a6de765134b233e0}{ft\+\_\+strndup}} (char \texorpdfstring{$\ast$}{*}s, int len)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a7ab94d22619ad42574c3bd062eb61b39}{free\+\_\+data}} (char \texorpdfstring{$\ast$}{*}stash, char \texorpdfstring{$\ast$}{*}buffer)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_ad14a84f29a67edf3ce5f4893fbf1857a}{read\+\_\+from\+\_\+file}} (int fd, char \texorpdfstring{$\ast$}{*}stash)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_ae57d5ecbead2377051bc90da6addbc4d}{leftovers}} (char \texorpdfstring{$\ast$}{*}stash)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a78d68a5f50a6eec0380ce25b4a1bd5b7}{get\+\_\+next\+\_\+line}} (int fd)
+\item 
+int \mbox{\hyperlink{libft_8h_a4f273b84f2e5a38597adbd94d1fea5f1}{ft\+\_\+strclen}} (char \texorpdfstring{$\ast$}{*}str, char c)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a5d0569226b10a3f04abacb59623d4d91}{gnl\+\_\+ft\+\_\+strchr}} (char \texorpdfstring{$\ast$}{*}str, char c)
+\item 
+char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{libft_8h_a26a6d05b9f0514eb629e69f7b5bceb48}{gnl\+\_\+ft\+\_\+strjoin}} (char \texorpdfstring{$\ast$}{*}s1, char \texorpdfstring{$\ast$}{*}s2)
+\item 
+int \mbox{\hyperlink{libft_8h_a1a04419f657be214129cb35741adf28f}{ft\+\_\+printf}} (const char \texorpdfstring{$\ast$}{*}str,...)
+\item 
+int \mbox{\hyperlink{libft_8h_a8b5c8ecd9dd02406abd454e7464f4ff3}{ft\+\_\+putchar}} (char c)
+\item 
+int \mbox{\hyperlink{libft_8h_a7af1951d1de68acf10344ef2a91a2446}{ft\+\_\+putnbrhex}} (unsigned int nbr, const char c)
+\item 
+int \mbox{\hyperlink{libft_8h_a2e5a81468bbf128fbb1a69093d01831f}{ft\+\_\+putptr}} (void \texorpdfstring{$\ast$}{*}nbr)
+\item 
+int \mbox{\hyperlink{libft_8h_a00c41874e2bcf0df6c44d916a6ee84e7}{ft\+\_\+uitoa}} (unsigned int nbr)
+\item 
+void \mbox{\hyperlink{libft_8h_aa392b1d3a5a2bd244414966927baf809}{ft\+\_\+putstr}} (char \texorpdfstring{$\ast$}{*}str)
+\item 
+int \mbox{\hyperlink{libft_8h_aa551b472109f4d1327c3d87771809b92}{ft\+\_\+printstr}} (char \texorpdfstring{$\ast$}{*}str)
+\item 
+int \mbox{\hyperlink{libft_8h_a558e32e9fa9cc3a31704b0ea9914bdf1}{ft\+\_\+printnbr}} (int n)
+\item 
+int \mbox{\hyperlink{libft_8h_ab96b3df0b57bcfd989b41485db196590}{ft\+\_\+printpercent}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{libft_8h_a6b20d41d6252e9871430c242cb1a56e7}\index{libft.h@{libft.h}!BUFFER\_SIZE@{BUFFER\_SIZE}}
+\index{BUFFER\_SIZE@{BUFFER\_SIZE}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{BUFFER\_SIZE}{BUFFER\_SIZE}}
+{\footnotesize\ttfamily \label{libft_8h_a6b20d41d6252e9871430c242cb1a56e7} 
+\#define BUFFER\+\_\+\+SIZE~42}
+
+\Hypertarget{libft_8h_ae9c7a3fcf619f9aeb244f8e85a68097f}\index{libft.h@{libft.h}!MAX\_FD@{MAX\_FD}}
+\index{MAX\_FD@{MAX\_FD}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{MAX\_FD}{MAX\_FD}}
+{\footnotesize\ttfamily \label{libft_8h_ae9c7a3fcf619f9aeb244f8e85a68097f} 
+\#define MAX\+\_\+\+FD~1024}
+
+
+
+\doxysubsection{Typedef Documentation}
+\Hypertarget{libft_8h_aefde00352c5326bb1c28ebd4404c4795}\index{libft.h@{libft.h}!t\_list@{t\_list}}
+\index{t\_list@{t\_list}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{t\_list}{t\_list}}
+{\footnotesize\ttfamily \label{libft_8h_aefde00352c5326bb1c28ebd4404c4795} 
+typedef struct \mbox{\hyperlink{structs__list}{s\+\_\+list}} \mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}}}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{libft_8h_a7ab94d22619ad42574c3bd062eb61b39}\index{libft.h@{libft.h}!free\_data@{free\_data}}
+\index{free\_data@{free\_data}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{free\_data()}{free\_data()}}
+{\footnotesize\ttfamily \label{libft_8h_a7ab94d22619ad42574c3bd062eb61b39} 
+char \texorpdfstring{$\ast$}{*} free\+\_\+data (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{stash}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{buffer}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_afad2ec371b4188602da9a94db687cb16}\index{libft.h@{libft.h}!ft\_atoi@{ft\_atoi}}
+\index{ft\_atoi@{ft\_atoi}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_atoi()}{ft\_atoi()}}
+{\footnotesize\ttfamily \label{libft_8h_afad2ec371b4188602da9a94db687cb16} 
+int ft\+\_\+atoi (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a5937ab0d08e31d0e3e4a16ec71e293a1}\index{libft.h@{libft.h}!ft\_bzero@{ft\_bzero}}
+\index{ft\_bzero@{ft\_bzero}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_bzero()}{ft\_bzero()}}
+{\footnotesize\ttfamily \label{libft_8h_a5937ab0d08e31d0e3e4a16ec71e293a1} 
+void ft\+\_\+bzero (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{size\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_af1c70b339fb306ee15c723bc7d73077f}\index{libft.h@{libft.h}!ft\_calloc@{ft\_calloc}}
+\index{ft\_calloc@{ft\_calloc}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_calloc()}{ft\_calloc()}}
+{\footnotesize\ttfamily \label{libft_8h_af1c70b339fb306ee15c723bc7d73077f} 
+void \texorpdfstring{$\ast$}{*} ft\+\_\+calloc (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{nitems}{, }\item[{size\+\_\+t}]{size}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a9c2c3821ea43ebdf97de07b123503f8b}\index{libft.h@{libft.h}!ft\_isalnum@{ft\_isalnum}}
+\index{ft\_isalnum@{ft\_isalnum}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_isalnum()}{ft\_isalnum()}}
+{\footnotesize\ttfamily \label{libft_8h_a9c2c3821ea43ebdf97de07b123503f8b} 
+int ft\+\_\+isalnum (\begin{DoxyParamCaption}\item[{int}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_ac283963beaa3b8c7d09b78851cda297e}\index{libft.h@{libft.h}!ft\_isalpha@{ft\_isalpha}}
+\index{ft\_isalpha@{ft\_isalpha}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_isalpha()}{ft\_isalpha()}}
+{\footnotesize\ttfamily \label{libft_8h_ac283963beaa3b8c7d09b78851cda297e} 
+int ft\+\_\+isalpha (\begin{DoxyParamCaption}\item[{int}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_abf60ddbec6479540e81f3648cf71f1f4}\index{libft.h@{libft.h}!ft\_isascii@{ft\_isascii}}
+\index{ft\_isascii@{ft\_isascii}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_isascii()}{ft\_isascii()}}
+{\footnotesize\ttfamily \label{libft_8h_abf60ddbec6479540e81f3648cf71f1f4} 
+int ft\+\_\+isascii (\begin{DoxyParamCaption}\item[{int}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a2cf15b8a1a277d1e2ce3654101a2003d}\index{libft.h@{libft.h}!ft\_isdigit@{ft\_isdigit}}
+\index{ft\_isdigit@{ft\_isdigit}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_isdigit()}{ft\_isdigit()}}
+{\footnotesize\ttfamily \label{libft_8h_a2cf15b8a1a277d1e2ce3654101a2003d} 
+int ft\+\_\+isdigit (\begin{DoxyParamCaption}\item[{int}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_abcdba69692f21146aeea5b3d59b7d0ca}\index{libft.h@{libft.h}!ft\_isprint@{ft\_isprint}}
+\index{ft\_isprint@{ft\_isprint}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_isprint()}{ft\_isprint()}}
+{\footnotesize\ttfamily \label{libft_8h_abcdba69692f21146aeea5b3d59b7d0ca} 
+int ft\+\_\+isprint (\begin{DoxyParamCaption}\item[{int}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a8a6ea3765dfd826eabfc00d36e28ea38}\index{libft.h@{libft.h}!ft\_itoa@{ft\_itoa}}
+\index{ft\_itoa@{ft\_itoa}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_itoa()}{ft\_itoa()}}
+{\footnotesize\ttfamily \label{libft_8h_a8a6ea3765dfd826eabfc00d36e28ea38} 
+char \texorpdfstring{$\ast$}{*} ft\+\_\+itoa (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a4c10e88fffc3c9467eb16e6debd227a4}\index{libft.h@{libft.h}!ft\_lstadd\_back@{ft\_lstadd\_back}}
+\index{ft\_lstadd\_back@{ft\_lstadd\_back}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_lstadd\_back()}{ft\_lstadd\_back()}}
+{\footnotesize\ttfamily \label{libft_8h_a4c10e88fffc3c9467eb16e6debd227a4} 
+void ft\+\_\+lstadd\+\_\+back (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{new}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a0195e4eb88fad15717ed90524ac15771}\index{libft.h@{libft.h}!ft\_lstadd\_front@{ft\_lstadd\_front}}
+\index{ft\_lstadd\_front@{ft\_lstadd\_front}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_lstadd\_front()}{ft\_lstadd\_front()}}
+{\footnotesize\ttfamily \label{libft_8h_a0195e4eb88fad15717ed90524ac15771} 
+void ft\+\_\+lstadd\+\_\+front (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{new}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a6e900cfaea2857bbf490f3105e38da93}\index{libft.h@{libft.h}!ft\_lstclear@{ft\_lstclear}}
+\index{ft\_lstclear@{ft\_lstclear}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_lstclear()}{ft\_lstclear()}}
+{\footnotesize\ttfamily \label{libft_8h_a6e900cfaea2857bbf490f3105e38da93} 
+void ft\+\_\+lstclear (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{void(\texorpdfstring{$\ast$}{*}}]{del~}{)(void \texorpdfstring{$\ast$}{*})}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_ac2b881501f9ee2f3ed5718f6d9ebee7c}\index{libft.h@{libft.h}!ft\_lstdelone@{ft\_lstdelone}}
+\index{ft\_lstdelone@{ft\_lstdelone}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_lstdelone()}{ft\_lstdelone()}}
+{\footnotesize\ttfamily \label{libft_8h_ac2b881501f9ee2f3ed5718f6d9ebee7c} 
+void ft\+\_\+lstdelone (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{void(\texorpdfstring{$\ast$}{*}}]{del~}{)(void \texorpdfstring{$\ast$}{*})}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a1888c62a89ec3d206f2ed4590f4a021d}\index{libft.h@{libft.h}!ft\_lstiter@{ft\_lstiter}}
+\index{ft\_lstiter@{ft\_lstiter}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_lstiter()}{ft\_lstiter()}}
+{\footnotesize\ttfamily \label{libft_8h_a1888c62a89ec3d206f2ed4590f4a021d} 
+void ft\+\_\+lstiter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{void(\texorpdfstring{$\ast$}{*}}]{f~}{)(void \texorpdfstring{$\ast$}{*})}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_aed5f9b5ecc45235a7b7cf9d4b24e43dc}\index{libft.h@{libft.h}!ft\_lstlast@{ft\_lstlast}}
+\index{ft\_lstlast@{ft\_lstlast}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_lstlast()}{ft\_lstlast()}}
+{\footnotesize\ttfamily \label{libft_8h_aed5f9b5ecc45235a7b7cf9d4b24e43dc} 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} ft\+\_\+lstlast (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{lst}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a8198d1837ffbba05823f5e85afebf9c6}\index{libft.h@{libft.h}!ft\_lstmap@{ft\_lstmap}}
+\index{ft\_lstmap@{ft\_lstmap}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_lstmap()}{ft\_lstmap()}}
+{\footnotesize\ttfamily \label{libft_8h_a8198d1837ffbba05823f5e85afebf9c6} 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} ft\+\_\+lstmap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{lst}{, }\item[{void \texorpdfstring{$\ast$}{*}(\texorpdfstring{$\ast$}{*}}]{f~}{)(void \texorpdfstring{$\ast$}{*}), }\item[{void(\texorpdfstring{$\ast$}{*}}]{del~}{)(void \texorpdfstring{$\ast$}{*})}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a8fe4ea6f56f5a2a75ee13d97416b60ed}\index{libft.h@{libft.h}!ft\_lstnew@{ft\_lstnew}}
+\index{ft\_lstnew@{ft\_lstnew}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_lstnew()}{ft\_lstnew()}}
+{\footnotesize\ttfamily \label{libft_8h_a8fe4ea6f56f5a2a75ee13d97416b60ed} 
+\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*} ft\+\_\+lstnew (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{content}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a9da614988ac99446db9df99d2c773fc1}\index{libft.h@{libft.h}!ft\_lstsize@{ft\_lstsize}}
+\index{ft\_lstsize@{ft\_lstsize}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_lstsize()}{ft\_lstsize()}}
+{\footnotesize\ttfamily \label{libft_8h_a9da614988ac99446db9df99d2c773fc1} 
+int ft\+\_\+lstsize (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{libft_8h_aefde00352c5326bb1c28ebd4404c4795}{t\+\_\+list}} \texorpdfstring{$\ast$}{*}}]{lst}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_ab45d9468eadf75be6bbf1dd45471d94f}\index{libft.h@{libft.h}!ft\_memchr@{ft\_memchr}}
+\index{ft\_memchr@{ft\_memchr}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_memchr()}{ft\_memchr()}}
+{\footnotesize\ttfamily \label{libft_8h_ab45d9468eadf75be6bbf1dd45471d94f} 
+void \texorpdfstring{$\ast$}{*} ft\+\_\+memchr (\begin{DoxyParamCaption}\item[{const void \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{int}]{c}{, }\item[{size\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a08f665a1828c402f2ffe2e2187f135fc}\index{libft.h@{libft.h}!ft\_memcmp@{ft\_memcmp}}
+\index{ft\_memcmp@{ft\_memcmp}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_memcmp()}{ft\_memcmp()}}
+{\footnotesize\ttfamily \label{libft_8h_a08f665a1828c402f2ffe2e2187f135fc} 
+int ft\+\_\+memcmp (\begin{DoxyParamCaption}\item[{const void \texorpdfstring{$\ast$}{*}}]{s1}{, }\item[{const void \texorpdfstring{$\ast$}{*}}]{s2}{, }\item[{size\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a5f5c5d19b1f0355d9768c75d30ed5559}\index{libft.h@{libft.h}!ft\_memcpy@{ft\_memcpy}}
+\index{ft\_memcpy@{ft\_memcpy}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_memcpy()}{ft\_memcpy()}}
+{\footnotesize\ttfamily \label{libft_8h_a5f5c5d19b1f0355d9768c75d30ed5559} 
+void \texorpdfstring{$\ast$}{*} ft\+\_\+memcpy (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{dst}{, }\item[{const void \texorpdfstring{$\ast$}{*}}]{src}{, }\item[{size\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a1701e739d77435f7da46349295e6f66f}\index{libft.h@{libft.h}!ft\_memmove@{ft\_memmove}}
+\index{ft\_memmove@{ft\_memmove}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_memmove()}{ft\_memmove()}}
+{\footnotesize\ttfamily \label{libft_8h_a1701e739d77435f7da46349295e6f66f} 
+void \texorpdfstring{$\ast$}{*} ft\+\_\+memmove (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{s1}{, }\item[{const void \texorpdfstring{$\ast$}{*}}]{s2}{, }\item[{size\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_aa2a7776abbcd9bf9929fb9a3ce4f713c}\index{libft.h@{libft.h}!ft\_memset@{ft\_memset}}
+\index{ft\_memset@{ft\_memset}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_memset()}{ft\_memset()}}
+{\footnotesize\ttfamily \label{libft_8h_aa2a7776abbcd9bf9929fb9a3ce4f713c} 
+void \texorpdfstring{$\ast$}{*} ft\+\_\+memset (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{int}]{c}{, }\item[{size\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a1a04419f657be214129cb35741adf28f}\index{libft.h@{libft.h}!ft\_printf@{ft\_printf}}
+\index{ft\_printf@{ft\_printf}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_printf()}{ft\_printf()}}
+{\footnotesize\ttfamily \label{libft_8h_a1a04419f657be214129cb35741adf28f} 
+int ft\+\_\+printf (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{}]{...}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a558e32e9fa9cc3a31704b0ea9914bdf1}\index{libft.h@{libft.h}!ft\_printnbr@{ft\_printnbr}}
+\index{ft\_printnbr@{ft\_printnbr}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_printnbr()}{ft\_printnbr()}}
+{\footnotesize\ttfamily \label{libft_8h_a558e32e9fa9cc3a31704b0ea9914bdf1} 
+int ft\+\_\+printnbr (\begin{DoxyParamCaption}\item[{int}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_ab96b3df0b57bcfd989b41485db196590}\index{libft.h@{libft.h}!ft\_printpercent@{ft\_printpercent}}
+\index{ft\_printpercent@{ft\_printpercent}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_printpercent()}{ft\_printpercent()}}
+{\footnotesize\ttfamily \label{libft_8h_ab96b3df0b57bcfd989b41485db196590} 
+int ft\+\_\+printpercent (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_aa551b472109f4d1327c3d87771809b92}\index{libft.h@{libft.h}!ft\_printstr@{ft\_printstr}}
+\index{ft\_printstr@{ft\_printstr}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_printstr()}{ft\_printstr()}}
+{\footnotesize\ttfamily \label{libft_8h_aa551b472109f4d1327c3d87771809b92} 
+int ft\+\_\+printstr (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a8b5c8ecd9dd02406abd454e7464f4ff3}\index{libft.h@{libft.h}!ft\_putchar@{ft\_putchar}}
+\index{ft\_putchar@{ft\_putchar}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_putchar()}{ft\_putchar()}}
+{\footnotesize\ttfamily \label{libft_8h_a8b5c8ecd9dd02406abd454e7464f4ff3} 
+int ft\+\_\+putchar (\begin{DoxyParamCaption}\item[{char}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a8ee15a511946c1397bd2bdea4aed6aee}\index{libft.h@{libft.h}!ft\_putchar\_fd@{ft\_putchar\_fd}}
+\index{ft\_putchar\_fd@{ft\_putchar\_fd}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_putchar\_fd()}{ft\_putchar\_fd()}}
+{\footnotesize\ttfamily \label{libft_8h_a8ee15a511946c1397bd2bdea4aed6aee} 
+void ft\+\_\+putchar\+\_\+fd (\begin{DoxyParamCaption}\item[{char}]{c}{, }\item[{int}]{fd}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_aeb112152acfc553d58d61a5df38afcde}\index{libft.h@{libft.h}!ft\_putendl\_fd@{ft\_putendl\_fd}}
+\index{ft\_putendl\_fd@{ft\_putendl\_fd}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_putendl\_fd()}{ft\_putendl\_fd()}}
+{\footnotesize\ttfamily \label{libft_8h_aeb112152acfc553d58d61a5df38afcde} 
+void ft\+\_\+putendl\+\_\+fd (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{int}]{fd}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a63cc0aec12256d125d3f85e472280972}\index{libft.h@{libft.h}!ft\_putnbr\_fd@{ft\_putnbr\_fd}}
+\index{ft\_putnbr\_fd@{ft\_putnbr\_fd}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_putnbr\_fd()}{ft\_putnbr\_fd()}}
+{\footnotesize\ttfamily \label{libft_8h_a63cc0aec12256d125d3f85e472280972} 
+void ft\+\_\+putnbr\+\_\+fd (\begin{DoxyParamCaption}\item[{int}]{n}{, }\item[{int}]{fd}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a7af1951d1de68acf10344ef2a91a2446}\index{libft.h@{libft.h}!ft\_putnbrhex@{ft\_putnbrhex}}
+\index{ft\_putnbrhex@{ft\_putnbrhex}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_putnbrhex()}{ft\_putnbrhex()}}
+{\footnotesize\ttfamily \label{libft_8h_a7af1951d1de68acf10344ef2a91a2446} 
+int ft\+\_\+putnbrhex (\begin{DoxyParamCaption}\item[{unsigned int}]{nbr}{, }\item[{const char}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a2e5a81468bbf128fbb1a69093d01831f}\index{libft.h@{libft.h}!ft\_putptr@{ft\_putptr}}
+\index{ft\_putptr@{ft\_putptr}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_putptr()}{ft\_putptr()}}
+{\footnotesize\ttfamily \label{libft_8h_a2e5a81468bbf128fbb1a69093d01831f} 
+int ft\+\_\+putptr (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{nbr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_aa392b1d3a5a2bd244414966927baf809}\index{libft.h@{libft.h}!ft\_putstr@{ft\_putstr}}
+\index{ft\_putstr@{ft\_putstr}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_putstr()}{ft\_putstr()}}
+{\footnotesize\ttfamily \label{libft_8h_aa392b1d3a5a2bd244414966927baf809} 
+void ft\+\_\+putstr (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_acefce9ac519f8f8b7d3fde33dbafe469}\index{libft.h@{libft.h}!ft\_putstr\_fd@{ft\_putstr\_fd}}
+\index{ft\_putstr\_fd@{ft\_putstr\_fd}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_putstr\_fd()}{ft\_putstr\_fd()}}
+{\footnotesize\ttfamily \label{libft_8h_acefce9ac519f8f8b7d3fde33dbafe469} 
+void ft\+\_\+putstr\+\_\+fd (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{int}]{fd}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_aa8168592c967f35d35af01d3b209096d}\index{libft.h@{libft.h}!ft\_split@{ft\_split}}
+\index{ft\_split@{ft\_split}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_split()}{ft\_split()}}
+{\footnotesize\ttfamily \label{libft_8h_aa8168592c967f35d35af01d3b209096d} 
+char \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} ft\+\_\+split (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{char}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_af0c4dbae2a90feb1f5a346bb2eb1fbc5}\index{libft.h@{libft.h}!ft\_strchr@{ft\_strchr}}
+\index{ft\_strchr@{ft\_strchr}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strchr()}{ft\_strchr()}}
+{\footnotesize\ttfamily \label{libft_8h_af0c4dbae2a90feb1f5a346bb2eb1fbc5} 
+char \texorpdfstring{$\ast$}{*} ft\+\_\+strchr (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{int}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a4f273b84f2e5a38597adbd94d1fea5f1}\index{libft.h@{libft.h}!ft\_strclen@{ft\_strclen}}
+\index{ft\_strclen@{ft\_strclen}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strclen()}{ft\_strclen()}}
+{\footnotesize\ttfamily \label{libft_8h_a4f273b84f2e5a38597adbd94d1fea5f1} 
+int ft\+\_\+strclen (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{char}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_aebe73f27c70c56ac5053f860ef5436c9}\index{libft.h@{libft.h}!ft\_strdup@{ft\_strdup}}
+\index{ft\_strdup@{ft\_strdup}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strdup()}{ft\_strdup()}}
+{\footnotesize\ttfamily \label{libft_8h_aebe73f27c70c56ac5053f860ef5436c9} 
+char \texorpdfstring{$\ast$}{*} ft\+\_\+strdup (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{s}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_ada722cffd2c6c8169ae339afd0f9763c}\index{libft.h@{libft.h}!ft\_striteri@{ft\_striteri}}
+\index{ft\_striteri@{ft\_striteri}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_striteri()}{ft\_striteri()}}
+{\footnotesize\ttfamily \label{libft_8h_ada722cffd2c6c8169ae339afd0f9763c} 
+void ft\+\_\+striteri (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{void(\texorpdfstring{$\ast$}{*}}]{f~}{)(unsigned int, char \texorpdfstring{$\ast$}{*})}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a91e6e3e428bcc9f2291b700e1829b82b}\index{libft.h@{libft.h}!ft\_strjoin@{ft\_strjoin}}
+\index{ft\_strjoin@{ft\_strjoin}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strjoin()}{ft\_strjoin()}}
+{\footnotesize\ttfamily \label{libft_8h_a91e6e3e428bcc9f2291b700e1829b82b} 
+char \texorpdfstring{$\ast$}{*} ft\+\_\+strjoin (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{s1}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{s2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a95e2e717644c36f51c890a3207b9d25a}\index{libft.h@{libft.h}!ft\_strlcat@{ft\_strlcat}}
+\index{ft\_strlcat@{ft\_strlcat}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strlcat()}{ft\_strlcat()}}
+{\footnotesize\ttfamily \label{libft_8h_a95e2e717644c36f51c890a3207b9d25a} 
+size\+\_\+t ft\+\_\+strlcat (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{dst}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{src}{, }\item[{size\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a1a5d7631e872903cdfd1ede2548752d9}\index{libft.h@{libft.h}!ft\_strlcpy@{ft\_strlcpy}}
+\index{ft\_strlcpy@{ft\_strlcpy}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strlcpy()}{ft\_strlcpy()}}
+{\footnotesize\ttfamily \label{libft_8h_a1a5d7631e872903cdfd1ede2548752d9} 
+size\+\_\+t ft\+\_\+strlcpy (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{dst}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{src}{, }\item[{size\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a625026087c3697a3ce0c1e47fb8a6168}\index{libft.h@{libft.h}!ft\_strlen@{ft\_strlen}}
+\index{ft\_strlen@{ft\_strlen}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strlen()}{ft\_strlen()}}
+{\footnotesize\ttfamily \label{libft_8h_a625026087c3697a3ce0c1e47fb8a6168} 
+size\+\_\+t ft\+\_\+strlen (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{str}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a668b60557bfc9d60c2d3ccda8afadf49}\index{libft.h@{libft.h}!ft\_strmapi@{ft\_strmapi}}
+\index{ft\_strmapi@{ft\_strmapi}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strmapi()}{ft\_strmapi()}}
+{\footnotesize\ttfamily \label{libft_8h_a668b60557bfc9d60c2d3ccda8afadf49} 
+char \texorpdfstring{$\ast$}{*} ft\+\_\+strmapi (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{char(\texorpdfstring{$\ast$}{*}}]{f~}{)(unsigned int, char)}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a19baff9ee48ede504ea36dc2abe1914f}\index{libft.h@{libft.h}!ft\_strncmp@{ft\_strncmp}}
+\index{ft\_strncmp@{ft\_strncmp}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strncmp()}{ft\_strncmp()}}
+{\footnotesize\ttfamily \label{libft_8h_a19baff9ee48ede504ea36dc2abe1914f} 
+int ft\+\_\+strncmp (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{s1}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{s2}{, }\item[{size\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a642d7f3c5c7ee564a6de765134b233e0}\index{libft.h@{libft.h}!ft\_strndup@{ft\_strndup}}
+\index{ft\_strndup@{ft\_strndup}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strndup()}{ft\_strndup()}}
+{\footnotesize\ttfamily \label{libft_8h_a642d7f3c5c7ee564a6de765134b233e0} 
+char \texorpdfstring{$\ast$}{*} ft\+\_\+strndup (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{int}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a47b1509d9da13cbe0300503f20a76d8f}\index{libft.h@{libft.h}!ft\_strnstr@{ft\_strnstr}}
+\index{ft\_strnstr@{ft\_strnstr}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strnstr()}{ft\_strnstr()}}
+{\footnotesize\ttfamily \label{libft_8h_a47b1509d9da13cbe0300503f20a76d8f} 
+char \texorpdfstring{$\ast$}{*} ft\+\_\+strnstr (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{origin}{, }\item[{const char \texorpdfstring{$\ast$}{*}}]{find}{, }\item[{size\+\_\+t}]{n}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a527dfea8e1b8fa683f39f39ba2c91f66}\index{libft.h@{libft.h}!ft\_strrchr@{ft\_strrchr}}
+\index{ft\_strrchr@{ft\_strrchr}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strrchr()}{ft\_strrchr()}}
+{\footnotesize\ttfamily \label{libft_8h_a527dfea8e1b8fa683f39f39ba2c91f66} 
+char \texorpdfstring{$\ast$}{*} ft\+\_\+strrchr (\begin{DoxyParamCaption}\item[{const char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{int}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a60352c5b39fab08469b3e28131a79e25}\index{libft.h@{libft.h}!ft\_strtrim@{ft\_strtrim}}
+\index{ft\_strtrim@{ft\_strtrim}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_strtrim()}{ft\_strtrim()}}
+{\footnotesize\ttfamily \label{libft_8h_a60352c5b39fab08469b3e28131a79e25} 
+char \texorpdfstring{$\ast$}{*} ft\+\_\+strtrim (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{s1}{, }\item[{char const \texorpdfstring{$\ast$}{*}}]{set}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a78c402cbf3d55b1374693c3b7d34f71d}\index{libft.h@{libft.h}!ft\_substr@{ft\_substr}}
+\index{ft\_substr@{ft\_substr}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_substr()}{ft\_substr()}}
+{\footnotesize\ttfamily \label{libft_8h_a78c402cbf3d55b1374693c3b7d34f71d} 
+char \texorpdfstring{$\ast$}{*} ft\+\_\+substr (\begin{DoxyParamCaption}\item[{char const \texorpdfstring{$\ast$}{*}}]{s}{, }\item[{unsigned int}]{start}{, }\item[{size\+\_\+t}]{len}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_ab86e5297914753b6c82d7e3c3020ce17}\index{libft.h@{libft.h}!ft\_tolower@{ft\_tolower}}
+\index{ft\_tolower@{ft\_tolower}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_tolower()}{ft\_tolower()}}
+{\footnotesize\ttfamily \label{libft_8h_ab86e5297914753b6c82d7e3c3020ce17} 
+int ft\+\_\+tolower (\begin{DoxyParamCaption}\item[{int}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_aef116be7b5bceafff4b59f20a4433d12}\index{libft.h@{libft.h}!ft\_toupper@{ft\_toupper}}
+\index{ft\_toupper@{ft\_toupper}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_toupper()}{ft\_toupper()}}
+{\footnotesize\ttfamily \label{libft_8h_aef116be7b5bceafff4b59f20a4433d12} 
+int ft\+\_\+toupper (\begin{DoxyParamCaption}\item[{int}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a00c41874e2bcf0df6c44d916a6ee84e7}\index{libft.h@{libft.h}!ft\_uitoa@{ft\_uitoa}}
+\index{ft\_uitoa@{ft\_uitoa}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{ft\_uitoa()}{ft\_uitoa()}}
+{\footnotesize\ttfamily \label{libft_8h_a00c41874e2bcf0df6c44d916a6ee84e7} 
+int ft\+\_\+uitoa (\begin{DoxyParamCaption}\item[{unsigned int}]{nbr}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a78d68a5f50a6eec0380ce25b4a1bd5b7}\index{libft.h@{libft.h}!get\_next\_line@{get\_next\_line}}
+\index{get\_next\_line@{get\_next\_line}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{get\_next\_line()}{get\_next\_line()}}
+{\footnotesize\ttfamily \label{libft_8h_a78d68a5f50a6eec0380ce25b4a1bd5b7} 
+char \texorpdfstring{$\ast$}{*} get\+\_\+next\+\_\+line (\begin{DoxyParamCaption}\item[{int}]{fd}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a5d0569226b10a3f04abacb59623d4d91}\index{libft.h@{libft.h}!gnl\_ft\_strchr@{gnl\_ft\_strchr}}
+\index{gnl\_ft\_strchr@{gnl\_ft\_strchr}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{gnl\_ft\_strchr()}{gnl\_ft\_strchr()}}
+{\footnotesize\ttfamily \label{libft_8h_a5d0569226b10a3f04abacb59623d4d91} 
+char \texorpdfstring{$\ast$}{*} gnl\+\_\+ft\+\_\+strchr (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{str}{, }\item[{char}]{c}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_a26a6d05b9f0514eb629e69f7b5bceb48}\index{libft.h@{libft.h}!gnl\_ft\_strjoin@{gnl\_ft\_strjoin}}
+\index{gnl\_ft\_strjoin@{gnl\_ft\_strjoin}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{gnl\_ft\_strjoin()}{gnl\_ft\_strjoin()}}
+{\footnotesize\ttfamily \label{libft_8h_a26a6d05b9f0514eb629e69f7b5bceb48} 
+char \texorpdfstring{$\ast$}{*} gnl\+\_\+ft\+\_\+strjoin (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{s1}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{s2}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_ae57d5ecbead2377051bc90da6addbc4d}\index{libft.h@{libft.h}!leftovers@{leftovers}}
+\index{leftovers@{leftovers}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{leftovers()}{leftovers()}}
+{\footnotesize\ttfamily \label{libft_8h_ae57d5ecbead2377051bc90da6addbc4d} 
+char \texorpdfstring{$\ast$}{*} leftovers (\begin{DoxyParamCaption}\item[{char \texorpdfstring{$\ast$}{*}}]{stash}{}\end{DoxyParamCaption})}
+
+\Hypertarget{libft_8h_ad14a84f29a67edf3ce5f4893fbf1857a}\index{libft.h@{libft.h}!read\_from\_file@{read\_from\_file}}
+\index{read\_from\_file@{read\_from\_file}!libft.h@{libft.h}}
+\doxysubsubsection{\texorpdfstring{read\_from\_file()}{read\_from\_file()}}
+{\footnotesize\ttfamily \label{libft_8h_ad14a84f29a67edf3ce5f4893fbf1857a} 
+char \texorpdfstring{$\ast$}{*} read\+\_\+from\+\_\+file (\begin{DoxyParamCaption}\item[{int}]{fd}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{stash}{}\end{DoxyParamCaption})}
+
