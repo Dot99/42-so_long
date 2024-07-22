@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['init_0',['init',['../group__mandatory.html#ga05cfbba5108bd97978f664067be17a01',1,'init(void):&#160;init.c'],['../group__mandatory.html#ga05cfbba5108bd97978f664067be17a01',1,'init(void):&#160;init.c'],['../group__mandatory.html#ga05cfbba5108bd97978f664067be17a01',1,'init(void):&#160;init.c'],['../group__bonus.html#ga05cfbba5108bd97978f664067be17a01',1,'init(void):&#160;init_bonus.c']]],
+  ['init_5fgame_1',['init_game',['../group__mandatory.html#ga39bdcf5a34b06c1edafcee209662e17d',1,'init_game(t_game *game):&#160;init.c'],['../group__mandatory.html#ga39bdcf5a34b06c1edafcee209662e17d',1,'init_game(t_game *game):&#160;init.c'],['../group__mandatory.html#ga39bdcf5a34b06c1edafcee209662e17d',1,'init_game(t_game *game):&#160;init.c'],['../group__bonus.html#ga39bdcf5a34b06c1edafcee209662e17d',1,'init_game(t_game *game):&#160;init_bonus.c']]],
+  ['init_5fimg_2',['init_img',['../group__mandatory.html#ga2293ef2b23c95e07eda30d66456f74f6',1,'init_img(t_game *game):&#160;init.c'],['../group__mandatory.html#ga2293ef2b23c95e07eda30d66456f74f6',1,'init_img(t_game *game):&#160;init.c'],['../group__mandatory.html#ga2293ef2b23c95e07eda30d66456f74f6',1,'init_img(t_game *game):&#160;init.c'],['../group__bonus.html#ga2293ef2b23c95e07eda30d66456f74f6',1,'init_img(t_game *game):&#160;init_bonus.c']]]
+];

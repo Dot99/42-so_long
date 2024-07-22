@@ -1,0 +1,161 @@
+\chapter{README}
+\hypertarget{md_README}{}\label{md_README}\index{README@{README}}
+  
+
+ \doxysection*{Description}
+
+ 
+
+This project is one of the projects of the school 42 where the purpose is to build a small 2D game. You have to work with textures, sprites, and some gameplay mechanics.
+
+ 
+
+  
+
+ \doxysection*{\href{docs/subject.pdf}{\texttt{ Subject}}  @subsection autotoc\+\_\+md0 Features\+:FeaturesOnly allow the player to exit after collecting every collectible..After collecting a lightsaber, the player can attack the enemies (Bonus Part)..Boss fight after defeating every enemy and collecting every collectible (Bonus Part)..Animation (Bonus Part).  Documentation (WIP)}
+
+ 
+
+ \doxysection*{How to Play}
+
+ \hypertarget{md_README_autotoc_md1}{}\doxysubsubsection{\texorpdfstring{Step 1 / Clone Repo}{Step 1 / Clone Repo}}\label{md_README_autotoc_md1}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ git\ clone\ https://github.com/Dot99/42-\/so\_long.git}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md2}{}\doxysubsubsection{\texorpdfstring{Step 2 / Install dependencies}{Step 2 / Install dependencies}}\label{md_README_autotoc_md2}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ cd\ 42-\/so\_long}
+\DoxyCodeLine{\$\ make\ download}
+
+\end{DoxyCode}
+ Minilibx dependencies\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ sudo\ apt-\/get\ update\ \&\&\ sudo\ apt-\/get\ install\ xorg\ libxext-\/dev\ zlib1g-\/dev\ libbsd-\/dev}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md3}{}\doxysubsubsection{\texorpdfstring{Step 3 / Compile the program}{Step 3 / Compile the program}}\label{md_README_autotoc_md3}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ make}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md4}{}\doxysubsubsection{\texorpdfstring{Step 4 / Run the program}{Step 4 / Run the program}}\label{md_README_autotoc_md4}
+The map folder has some pre-\/configured maps for you to test the game environment. ~\newline
+ You\textquotesingle{}re able to create a map of your own and the program will tell you if the map is valid or not, pointing the out the problem if it isn\textquotesingle{}t. ~\newline
+
+
+
+
+{\bfseries{Click here for map creation tutorial.}}\begin{adjustwidth}{1em}{0em}
+
+
+Map Rules\+: ~\newline
+ It has to be a {\bfseries{rectangular closed map}} (walls around) and there needs to be a valid way to collect the health packs and to the exit. ~\newline
+ The map file extension has to be \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\textquotesingle{}.ber\textquotesingle{}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}. ~\newline
+ The map is composed by 5 elements\+: ~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-\/\ '1'\ for\ walls;}
+\DoxyCodeLine{-\/\ '0'\ for\ available\ floor;}
+\DoxyCodeLine{-\/\ 'P'\ for\ Player\ starting\ position;}
+\DoxyCodeLine{-\/\ 'E'\ for\ exit;}
+\DoxyCodeLine{-\/\ 'C'\ for\ collectible;}
+
+\end{DoxyCode}
+
+
+Map example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1111111111111111}
+\DoxyCodeLine{1C0100000000C011}
+\DoxyCodeLine{1000011111000001}
+\DoxyCodeLine{1P0011E000001001}
+\DoxyCodeLine{1000000000000001}
+\DoxyCodeLine{1000000000000001}
+\DoxyCodeLine{1111011100001001}
+\DoxyCodeLine{10C0000C100000C1}
+\DoxyCodeLine{1111111111111111}
+
+\end{DoxyCode}
+ \end{adjustwidth}
+
+
+To run the program, you need to select a map from the existing ones or the one that you\textquotesingle{}ve created. For that, you need to put its filename, extension and directory. ~\newline
+
+
+For {\itshape mandatory}\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ ./so\_long\ maps/map.ber}
+
+\end{DoxyCode}
+
+
+To exit the game, just press \textquotesingle{}ESC\textquotesingle{} on your keyboard or click the \textquotesingle{}X\textquotesingle{} in the game window. {\bfseries{HAVE FUN!}}\hypertarget{md_README_autotoc_md5}{}\doxysubsubsection{\texorpdfstring{Step 5 / Bonus (Optional)}{Step 5 / Bonus (Optional)}}\label{md_README_autotoc_md5}
+The bonus part of this project is much more advanced since it includes animations, attacking and a boss fight. To run the bonus part of this project\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ make\ bonus}
+
+\end{DoxyCode}
+
+
+The creation of a map for this part I advise you to use the predefined maps with the name \+\_\+bonus since they are ready to run with it. The test\+\_\+bonus.\+ber is a test map for bonus and faster and the map\+\_\+bonus.\+ber is "{}the"{} level.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\$\ ./so\_long\_bonus\ maps/map\_bonus.ber}
+
+\end{DoxyCode}
+
+
+
+
+{\bfseries{In case you want to create your bonus\+\_\+map.}}\begin{adjustwidth}{1em}{0em}
+
+
+Map Rules\+: ~\newline
+ It has to be a {\bfseries{rectangular closed map}} (walls around) and there needs to be a valid way to collect the health packs and to the exit. ~\newline
+ The map file extension has to be \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}\textquotesingle{}.ber\textquotesingle{}\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}. ~\newline
+ The map is composed by 5 elements\+: ~\newline
+ 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-\/\ '1'\ for\ walls;}
+\DoxyCodeLine{-\/\ '0'\ for\ available\ floor;}
+\DoxyCodeLine{-\/\ 'P'\ for\ Player\ starting\ position;}
+\DoxyCodeLine{-\/\ 'E'\ for\ exit;}
+\DoxyCodeLine{-\/\ 'C'\ for\ collectible;}
+\DoxyCodeLine{-\/\ 'X'\ for\ enemies;}
+\DoxyCodeLine{-\/\ 'L'\ for\ lightsaber;}
+
+\end{DoxyCode}
+
+
+Map example\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1111111111111111}
+\DoxyCodeLine{1C010000000ECE11}
+\DoxyCodeLine{1000L11111000001}
+\DoxyCodeLine{1P0011X000001001}
+\DoxyCodeLine{100000000E000001}
+\DoxyCodeLine{1000000000000001}
+\DoxyCodeLine{1111011100001001}
+\DoxyCodeLine{10C0000C100000C1}
+\DoxyCodeLine{1111111111111111}
+
+\end{DoxyCode}
+ \end{adjustwidth}
+\hypertarget{md_README_autotoc_md6}{}\doxysubsection{\texorpdfstring{Disclaimer\+:}{Disclaimer\+:}}\label{md_README_autotoc_md6}
+This project\textquotesingle{}s source code adheres to the standards of 42 School and its norms and rigorous coding practices\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{-\/\ We\ refrain\ from\ using\ 'for,'\ 'do\ while,'\ 'switch,'\ 'case,'\ or\ 'goto'\ constructs.}
+\DoxyCodeLine{-\/\ Each\ function\ has\ no\ more\ than\ 25\ lines\ of\ code.\ }
+\DoxyCodeLine{-\/\ There's\ a\ maximum\ of\ 5\ functions\ per\ file.}
+\DoxyCodeLine{-\/\ Assignments\ and\ declarations\ are\ kept\ on\ separate\ lines\ unless\ the\ variable\ is\ declared\ as\ static.}
+\DoxyCodeLine{-\/\ We\ ensure\ that\ no\ single\ function\ has\ more\ than\ 5\ variables,\ promoting\ code\ simplicity\ and\ readability.}
+
+\end{DoxyCode}
+ 
