@@ -11,10 +11,6 @@
 	<img src="textures/game.png" alt="Game Screenshot">
 </div>
 
-<div align="center">
-	<h1><a href="subject.pdf">Subject</a><h2>
-</div>
-
 ## Features:
 - Only allow the player to exit after collecting every collectible.
 - After collecting a lightsaber, the player can attack the enemies (Bonus Part).
